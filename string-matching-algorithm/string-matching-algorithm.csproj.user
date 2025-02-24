@@ -16,10 +16,22 @@
     <Compile Update="Views\AnalysisView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\BoyerMooreView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\GuideView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\HomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\KMPView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NaiveView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\RabinKarpView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -36,10 +48,22 @@
     <Page Update="Views\AnalysisView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\BoyerMooreView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\GuideView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\HomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\KMPView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NaiveView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\RabinKarpView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

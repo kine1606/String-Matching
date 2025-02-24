@@ -30,3 +30,11 @@ C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\obj
 C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\obj\Debug\net8.0-windows\Views\AlgorithmView.baml
 C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\obj\Debug\net8.0-windows\Views\AnalysisView.baml
 C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\obj\Debug\net8.0-windows\Views\GuideView.baml
+C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\obj\Debug\net8.0-windows\Views\BoyerMooreView.g.cs
+C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\obj\Debug\net8.0-windows\Views\KMPView.g.cs
+C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\obj\Debug\net8.0-windows\Views\RabinKarpView.g.cs
+C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\obj\Debug\net8.0-windows\Views\BoyerMooreView.baml
+C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\obj\Debug\net8.0-windows\Views\KMPView.baml
+C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\obj\Debug\net8.0-windows\Views\RabinKarpView.baml
+C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\obj\Debug\net8.0-windows\Views\NaiveView.g.cs
+C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\obj\Debug\net8.0-windows\Views\NaiveView.baml

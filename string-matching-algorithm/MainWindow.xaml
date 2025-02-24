@@ -16,10 +16,40 @@
             <DataTemplate DataType="{x:Type viewmodels:HomeViewModel}">
                 <views:HomeView />
             </DataTemplate>
-            
+
             <DataTemplate DataType="{x:Type viewmodels:AboutViewModel}">
                 <views:AboutView />
             </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:GuideViewModel}">
+                <views:GuideView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:AlgorithmViewModel}">
+                <views:AlgorithmView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:AnalysisViewModel}">
+                <views:AnalysisView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:NaiveViewModel}">
+                <views:NaiveView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:KMPViewModel}">
+                <views:KMPView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:RabinKarpVIewModel}">
+                <views:RabinKarpView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:BoyerMooreViewModel}">
+                <views:BoyerMooreView />
+            </DataTemplate>
+
+
         </ContentControl.Resources>
     </ContentControl>
 </Window>
