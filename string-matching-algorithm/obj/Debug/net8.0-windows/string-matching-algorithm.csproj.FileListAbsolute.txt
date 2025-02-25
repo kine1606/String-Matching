@@ -38,3 +38,7 @@ C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\obj
 C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\obj\Debug\net8.0-windows\Views\RabinKarpView.baml
 C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\obj\Debug\net8.0-windows\Views\NaiveView.g.cs
 C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\obj\Debug\net8.0-windows\Views\NaiveView.baml
+C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\obj\Debug\net8.0-windows\string-matching-algorithm.csproj.AssemblyReference.cache
+C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\bin\Debug\net8.0-windows\Microsoft.Expression.Interactions.dll
+C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\bin\Debug\net8.0-windows\System.Windows.Interactivity.dll
+C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\obj\Debug\net8.0-windows\string-m.B68B92D1.Up2Date

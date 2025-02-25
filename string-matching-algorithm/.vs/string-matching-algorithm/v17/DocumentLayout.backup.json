@@ -3,88 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\views\\naiveview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:views\\naiveview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\viewmodels\\naiveviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:viewmodels\\naiveviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\viewmodels\\kmpviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:viewmodels\\kmpviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\viewmodels\\algorithmviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:viewmodels\\algorithmviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\viewmodels\\boyermooreviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:viewmodels\\boyermooreviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\viewmodels\\rabinkarpviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:viewmodels\\rabinkarpviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\views\\kmpview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:views\\kmpview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\views\\boyermooreview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:views\\boyermooreview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\commands\\commandbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:commands\\commandbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\views\\rabinkarpview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:views\\rabinkarpview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\views\\algorithmview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:views\\algorithmview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\views\\aboutview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:views\\aboutview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\views\\guideview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:views\\guideview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\views\\analysisview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:views\\analysisview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\viewmodels\\analysisviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:viewmodels\\analysisviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\viewmodels\\guideviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:viewmodels\\guideviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\views\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:views\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -107,264 +43,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "KMPViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\KMPViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\KMPViewModel.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\KMPViewModel.cs",
-              "RelativeToolTip": "ViewModels\\KMPViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Commands\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Commands\\RelayCommand.cs",
+              "RelativeToolTip": "Commands\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T03:58:02.01Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BoyerMooreViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\BoyerMooreViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\BoyerMooreViewModel.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\BoyerMooreViewModel.cs",
-              "RelativeToolTip": "ViewModels\\BoyerMooreViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T03:55:57.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T03:30:59.141Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AlgorithmViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\AlgorithmViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\AlgorithmViewModel.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\AlgorithmViewModel.cs",
-              "RelativeToolTip": "ViewModels\\AlgorithmViewModel.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAnwBcAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T03:33:55.318Z",
+              "WhenOpened": "2025-02-25T14:10:26.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "NaiveViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\NaiveViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\NaiveViewModel.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\NaiveViewModel.cs",
-              "RelativeToolTip": "ViewModels\\NaiveViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "Title": "CommandBase.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Commands\\CommandBase.cs",
+              "RelativeDocumentMoniker": "Commands\\CommandBase.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Commands\\CommandBase.cs",
+              "RelativeToolTip": "Commands\\CommandBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T03:49:49.389Z",
+              "WhenOpened": "2025-02-25T13:54:14.514Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "NaiveView.xaml",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\NaiveView.xaml",
-              "RelativeDocumentMoniker": "Views\\NaiveView.xaml",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\NaiveView.xaml",
-              "RelativeToolTip": "Views\\NaiveView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T03:49:38.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\MainViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\MainViewModel.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\MainViewModel.cs",
-              "RelativeToolTip": "ViewModels\\MainViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T03:59:18.429Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ViewModelBase.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\ViewModelBase.cs",
-              "RelativeDocumentMoniker": "ViewModels\\ViewModelBase.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\ViewModelBase.cs",
-              "RelativeToolTip": "ViewModels\\ViewModelBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T04:05:30.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RabinKarpVIewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\RabinKarpVIewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\RabinKarpVIewModel.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\RabinKarpVIewModel.cs",
-              "RelativeToolTip": "ViewModels\\RabinKarpVIewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAACLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T04:00:57.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\AssemblyInfo.cs",
-              "RelativeToolTip": "AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T04:03:13.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "KMPView.xaml",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\KMPView.xaml",
               "RelativeDocumentMoniker": "Views\\KMPView.xaml",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\KMPView.xaml",
               "RelativeToolTip": "Views\\KMPView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T03:49:26.101Z",
+              "WhenOpened": "2025-02-25T13:43:58.498Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BoyerMooreView.xaml",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\BoyerMooreView.xaml",
-              "RelativeDocumentMoniker": "Views\\BoyerMooreView.xaml",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\BoyerMooreView.xaml",
-              "RelativeToolTip": "Views\\BoyerMooreView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T03:48:17.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RabinKarpView.xaml",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\RabinKarpView.xaml",
-              "RelativeDocumentMoniker": "Views\\RabinKarpView.xaml",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\RabinKarpView.xaml",
-              "RelativeToolTip": "Views\\RabinKarpView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T03:50:48.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AlgorithmView.xaml",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\AlgorithmView.xaml",
-              "RelativeDocumentMoniker": "Views\\AlgorithmView.xaml",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\AlgorithmView.xaml",
-              "RelativeToolTip": "Views\\AlgorithmView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T03:31:06.039Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AboutView.xaml",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\AboutView.xaml",
-              "RelativeDocumentMoniker": "Views\\AboutView.xaml",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\AboutView.xaml",
-              "RelativeToolTip": "Views\\AboutView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T03:45:30.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AnalysisViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\AnalysisViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\AnalysisViewModel.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\AnalysisViewModel.cs",
-              "RelativeToolTip": "ViewModels\\AnalysisViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "KMPViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\KMPViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\KMPViewModel.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\KMPViewModel.cs",
+              "RelativeToolTip": "ViewModels\\KMPViewModel.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA1wCMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T03:43:39.349Z",
+              "WhenOpened": "2025-02-25T13:43:41.266Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "GuideViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\GuideViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\GuideViewModel.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\GuideViewModel.cs",
-              "RelativeToolTip": "ViewModels\\GuideViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAB8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T03:42:09.903Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AnalysisView.xaml",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\AnalysisView.xaml",
-              "RelativeDocumentMoniker": "Views\\AnalysisView.xaml",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\AnalysisView.xaml",
-              "RelativeToolTip": "Views\\AnalysisView.xaml",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T03:45:39.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GuideView.xaml",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\GuideView.xaml",
-              "RelativeDocumentMoniker": "Views\\GuideView.xaml",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\GuideView.xaml",
-              "RelativeToolTip": "Views\\GuideView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T03:46:05.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "HomeViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\HomeViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\HomeViewModel.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\HomeViewModel.cs",
-              "RelativeToolTip": "ViewModels\\HomeViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T03:34:42.237Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "HomeView.xaml",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\HomeView.xaml",
-              "RelativeDocumentMoniker": "Views\\HomeView.xaml",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\HomeView.xaml",
-              "RelativeToolTip": "Views\\HomeView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T03:36:19.329Z",
+              "WhenOpened": "2025-02-25T13:43:26.415Z",
               "EditorCaption": ""
             }
           ]
