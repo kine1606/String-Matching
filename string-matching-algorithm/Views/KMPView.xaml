@@ -14,7 +14,10 @@
     <StackPanel>
         <TextBlock Text="{Binding NameTemp}" />
         <Button Command="{Binding NavigateAlgorithmCommand}" Content="Back" />
+
+
         <Button Command="{Binding Click1Command}" Content="test command" />
+
         <Button Content="test trigger">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="Click">
@@ -22,5 +25,8 @@
                 </i:EventTrigger>
             </i:Interaction.Triggers>
         </Button>
+
+
+
     </StackPanel>
 </UserControl>

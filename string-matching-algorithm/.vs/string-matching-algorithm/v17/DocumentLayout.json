@@ -50,8 +50,7 @@
               "RelativeToolTip": "Commands\\RelayCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T14:10:26.685Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T14:10:26.685Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "Commands\\CommandBase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T13:54:14.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T13:54:14.514Z"
             },
             {
               "$type": "Document",
@@ -86,7 +84,7 @@
               "RelativeDocumentMoniker": "ViewModels\\KMPViewModel.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\KMPViewModel.cs",
               "RelativeToolTip": "ViewModels\\KMPViewModel.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwCsAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAA1wB0AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-25T13:43:41.266Z",
               "EditorCaption": ""
@@ -100,8 +98,7 @@
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-25T13:43:26.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T13:43:26.415Z"
             }
           ]
         }
