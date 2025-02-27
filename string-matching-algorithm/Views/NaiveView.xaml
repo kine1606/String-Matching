@@ -12,5 +12,25 @@
     <StackPanel>
         <TextBlock Text="Naive" />
         <Button Command="{Binding NavigateAlgorithmCommand}" Content="Back" />
+
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+            <ItemsControl ItemsSource="{Binding TextList}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock
+                            Margin="10"
+                            FontSize="16"
+                            Text="{Binding}" />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+        <Button Command="{Binding SearchCommand}" Content="Search" />
+        <TextBox Text="{Binding TextTemp}" />
     </StackPanel>
 </UserControl>
