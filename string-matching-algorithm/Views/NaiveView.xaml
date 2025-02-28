@@ -13,8 +13,36 @@
         <TextBlock Text="Naive" />
         <Button Command="{Binding NavigateAlgorithmCommand}" Content="Back" />
 
+        <TextBox Text="{Binding Txt}" />
+        <TextBox Text="{Binding Pattern}" />
+
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
-            <ItemsControl ItemsSource="{Binding TextList}">
+            <ItemsControl ItemsSource="{Binding TxtList, Mode=TwoWay}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border
+                            Width="20"
+                            Height="20"
+                            BorderBrush="#000"
+                            BorderThickness="1">
+                            <TextBlock
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontSize="16"
+                                Foreground="{Binding Foreground}"
+                                Text="{Binding Text}" />
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+            <ItemsControl ItemsSource="{Binding PatList}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
                         <StackPanel Orientation="Horizontal" />
@@ -25,14 +53,24 @@
                         <TextBlock
                             Margin="10"
                             FontSize="16"
-                            Text="{Binding}" />
+                            Foreground="{Binding Foreground}"
+                            Text="{Binding Text}" />
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
         </ScrollViewer>
 
-        <Button Command="{Binding SearchCommand}" Content="Search" />
 
-        <TextBox Name="txb" Text="{Binding TextTemp}" />
+        <TextBlock Text="{Binding ResultText}" />
+        <!--  search  -->
+        <Button Command="{Binding SearchCommand}" Content="Search" />
+        <!--  result  -->
+        <Button Command="{Binding ResultCommand}" Content="Result" />
+        <!--  speed animation  -->
+        <TextBox Text="{Binding AnimationSpeed}" />
+        <!--  random text and pattern  -->
+        <Button Command="{Binding RandomTextCommand}" Content="Random Text" />
+        <Button Command="{Binding RandomPatternCommand}" Content="Random Pattern" />
+
     </StackPanel>
 </UserControl>

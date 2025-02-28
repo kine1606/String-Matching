@@ -15,7 +15,7 @@
         <TextBox Text="{Binding Txt}" />
         <TextBox Text="{Binding Pattern}" />
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
-            <ItemsControl ItemsSource="{Binding TxtList}">
+            <ItemsControl ItemsSource="{Binding TxtList, Mode=TwoWay}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
                         <StackPanel Orientation="Horizontal" />
@@ -32,7 +32,8 @@
                                 HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
                                 FontSize="16"
-                                Text="{Binding}" />
+                                Foreground="{Binding Foreground}"
+                                Text="{Binding Text}" />
                         </Border>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
@@ -50,16 +51,24 @@
                         <TextBlock
                             Margin="10"
                             FontSize="16"
-                            Text="{Binding}" />
+                            Foreground="{Binding Foreground}"
+                            Text="{Binding Text}" />
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
         </ScrollViewer>
+
+
+        <TextBlock Text="{Binding ResultText}" />
+        <!--  search  -->
         <Button Command="{Binding SearchCommand}" Content="Search" />
+        <!--  result  -->
         <Button Command="{Binding ResultCommand}" Content="Result" />
-        <Button Command="{Binding StepCommand}" Content="Step" />
-        <Button Command="{Binding StartCommand}" Content="Start" />
-        <Button Command="{Binding RefreshCommand}" Content="Refresh" />
+        <!--  speed animation  -->
+        <TextBox Text="{Binding AnimationSpeed}" />
+        <!--  random text and pattern  -->
+        <Button Command="{Binding RandomTextCommand}" Content="Random Text" />
+        <Button Command="{Binding RandomPatternCommand}" Content="Random Pattern" />
 
     </StackPanel>
 </UserControl>
