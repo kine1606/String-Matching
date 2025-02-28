@@ -4,6 +4,9 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.cache
+*.vscode
+*.csproj.user
 
 # Ignore build output
 bin/

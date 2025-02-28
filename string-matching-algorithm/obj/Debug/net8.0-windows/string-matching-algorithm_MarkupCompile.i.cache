@@ -16,5 +16,5 @@ C:\Users\PC\OneDrive\Workplace\dna-string-matching\string-matching-algorithm\App
 2002067753824
 MainWindow.xaml;Views\AboutView.xaml;Views\AlgorithmView.xaml;Views\AnalysisView.xaml;Views\BoyerMooreView.xaml;Views\GuideView.xaml;Views\HomeView.xaml;Views\KMPView.xaml;Views\NaiveView.xaml;Views\RabinKarpView.xaml;
 
-True
+False
 

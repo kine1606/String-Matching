@@ -66,12 +66,6 @@
                          Text="{Binding PatternString}"
                          FontSize="25"></TextBox>
 
-                <Button VerticalAlignment="Top"
-                        HorizontalAlignment="Right"
-                        Background="Red"
-                        Width="30"
-                        Height="30"
-                        Command="{Binding Click3Command}"></Button>
             </StackPanel>
 
         </Grid>
@@ -85,6 +79,16 @@
                    FontSize="20"
                    Content="{Binding PatternString}"
                    ></Label>
+            <Button Content="Search"
+                    Command="{Binding SearchCommand}"/>
+            <Button Content="Start"
+                    Command="{Binding StartCommand}"></Button>
+            <Button Content="Step"
+                    Command="{Binding StepOverCommand}"></Button>
+            <Button Content="Refresh"
+                    Command="{Binding RefreshCommand}"></Button>
+            <Button Content="Result"
+                    Command="{Binding ResultCommand}"></Button>
         </StackPanel>
     </Grid>
 </UserControl>

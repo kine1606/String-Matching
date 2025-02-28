@@ -57,14 +57,12 @@ public class BoyerMooreViewModel : ViewModelBase {
     public ObservableCollection<TextItem> TxtList {
         get => _txtList;
         set { _txtList = value; OnPropertyChanged(nameof(TxtList)); }
-
     }
     private ObservableCollection<TextItem> _txtList = new();
 
     public ObservableCollection<TextItem> PatList {
         get => _patList;
         set { _patList = value; OnPropertyChanged(nameof(PatList)); }
-
     }
     private ObservableCollection<TextItem> _patList = new();
 
