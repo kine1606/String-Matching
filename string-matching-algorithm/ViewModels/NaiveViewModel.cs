@@ -11,6 +11,7 @@ using System.Windows.Input;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace string_matching_algorithm.ViewModels; 
+//brute force : vet' can.
 public class NaiveViewModel : ViewModelBase {
 
     #region Properties
