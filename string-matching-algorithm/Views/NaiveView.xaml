@@ -30,7 +30,9 @@
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
         </ScrollViewer>
+
         <Button Command="{Binding SearchCommand}" Content="Search" />
-        <TextBox Text="{Binding TextTemp}" />
+
+        <TextBox Name="txb" Text="{Binding TextTemp}" />
     </StackPanel>
 </UserControl>

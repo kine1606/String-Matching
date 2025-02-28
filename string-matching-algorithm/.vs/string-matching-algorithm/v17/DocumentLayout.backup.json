@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:viewmodels\\boyermooreviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\views\\boyermooreview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:views\\boyermooreview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|c:\\users\\pc\\onedrive\\workplace\\dna-string-matching\\string-matching-algorithm\\viewmodels\\naiveviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:viewmodels\\naiveviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,40 +38,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BoyerMooreViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\BoyerMooreViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\BoyerMooreViewModel.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\BoyerMooreViewModel.cs",
-              "RelativeToolTip": "ViewModels\\BoyerMooreViewModel.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T16:19:06.87Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NaiveViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\NaiveViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\NaiveViewModel.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\NaiveViewModel.cs",
-              "RelativeToolTip": "ViewModels\\NaiveViewModel.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T15:51:59.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "NaiveView.xaml",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\NaiveView.xaml",
               "RelativeDocumentMoniker": "Views\\NaiveView.xaml",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\NaiveView.xaml",
               "RelativeToolTip": "Views\\NaiveView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-27T15:51:56.626Z",
+              "WhenOpened": "2025-02-28T03:43:59.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NaiveViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\NaiveViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\NaiveViewModel.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\NaiveViewModel.cs",
+              "RelativeToolTip": "ViewModels\\NaiveViewModel.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAC8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T03:31:19.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BoyerMooreView.xaml",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\BoyerMooreView.xaml",
+              "RelativeDocumentMoniker": "Views\\BoyerMooreView.xaml",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\Views\\BoyerMooreView.xaml",
+              "RelativeToolTip": "Views\\BoyerMooreView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-28T03:06:07.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BoyerMooreViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\BoyerMooreViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\BoyerMooreViewModel.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Workplace\\dna-string-matching\\string-matching-algorithm\\ViewModels\\BoyerMooreViewModel.cs",
+              "RelativeToolTip": "ViewModels\\BoyerMooreViewModel.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAgwGUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T16:19:06.87Z",
               "EditorCaption": ""
             }
           ]

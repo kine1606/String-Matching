@@ -12,5 +12,54 @@
     <StackPanel>
         <TextBlock Text="Boyer Moore" />
         <Button Command="{Binding NavigateAlgorithmCommand}" Content="Back" />
+        <TextBox Text="{Binding Txt}" />
+        <TextBox Text="{Binding Pattern}" />
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+            <ItemsControl ItemsSource="{Binding TxtList}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border
+                            Width="20"
+                            Height="20"
+                            BorderBrush="#000"
+                            BorderThickness="1">
+                            <TextBlock
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontSize="16"
+                                Text="{Binding}" />
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+            <ItemsControl ItemsSource="{Binding PatList}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock
+                            Margin="10"
+                            FontSize="16"
+                            Text="{Binding}" />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+        <Button Command="{Binding SearchCommand}" Content="Search" />
+        <Button Command="{Binding ResultCommand}" Content="Result" />
+        <Button Command="{Binding StepCommand}" Content="Step" />
+        <Button Command="{Binding StartCommand}" Content="Start" />
+        <Button Command="{Binding RefreshCommand}" Content="Refresh" />
+
     </StackPanel>
 </UserControl>
