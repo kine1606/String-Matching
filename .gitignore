@@ -1,0 +1,56 @@
+# Ignore Visual Studio specific files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore build output
+bin/
+obj/
+out/
+
+# Ignore package directories
+packages/
+*.nupkg
+project.lock.json
+
+# Ignore dependency management files
+node_modules/
+bower_components/
+
+# Ignore temporary files
+*.log
+*.tlog
+*.cache
+*.pdb
+
+# Ignore compiled DLLs and executables
+*.exe
+*.dll
+*.pdb
+
+# Ignore Rider / JetBrains IDE settings
+.idea/
+
+# Ignore ReSharper files
+*.DotSettings.user
+
+# Ignore Debug and Release configurations
+Debug/
+Release/
+
+# Ignore files related to publishing
+publish/
+app.publish/
+
+# Ignore local database files
+*.mdf
+*.ldf
+
+# Ignore any secrets or user configs
+secrets.json
+appsettings.*.json
+
+# Ignore unnecessary files in WPF projects
+Generated_Code/
