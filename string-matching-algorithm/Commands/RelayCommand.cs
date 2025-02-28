@@ -24,3 +24,5 @@ public class RelayCommand<T> : ICommand {
         remove => CommandManager.RequerySuggested -= value;
     }
 }
+
+
