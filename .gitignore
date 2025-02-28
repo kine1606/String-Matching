@@ -1,3 +1,43 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa]bout/
+[Ll]ogs/
+[Ll]og/
+[Ll]ogging/
+[Ll]ogfile*
+[Ll]og.*
+
+
+# Ignore build directories
+bin/
+obj/
+
+# IDE-specific files
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.suo
+*.ntvs_analysis.dat
+*.ncb
+*.sdf
+*.opensdf
+*.cache
+*.pdb
+*.opendb
+*.tlog
+*.idb
+*.psess
+*.vsp
+*.vspscc
+*.vssscc
+
 # Ignore Visual Studio specific files
 .vs/
 *.suo
@@ -57,3 +97,4 @@ appsettings.*.json
 
 # Ignore unnecessary files in WPF projects
 Generated_Code/
+
