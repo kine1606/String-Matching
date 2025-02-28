@@ -36,14 +36,12 @@ public class BoyerMooreViewModel : ViewModelBase {
     public ObservableCollection<string> TxtList {
         get => _txtList;
         set { _txtList = value; OnPropertyChanged(nameof(TxtList)); }
-
     }
     private ObservableCollection<string> _txtList = new();
 
     public ObservableCollection<string> PatList{
         get => _patList;
         set { _patList = value; OnPropertyChanged(nameof(PatList)); }
-
     }
     private ObservableCollection<string> _patList = new();
 
@@ -56,7 +54,6 @@ public class BoyerMooreViewModel : ViewModelBase {
     public ICommand SearchCommand { get; set; }
     public BoyerMooreViewModel(NavigationStore navigationStore) {
         NavigateAlgorithmCommand = new NavigateCommand<AlgorithmViewModel>(navigationStore, () => new AlgorithmViewModel(navigationStore));
-
         ResultCommand = new RelayCommand<object>(search);
         SearchCommand = new RelayCommand<object>(Render);
     }

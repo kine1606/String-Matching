@@ -16,5 +16,5 @@ D:\GitHub\DSA_Advanced\string-matching-algorithm\App.xaml
 200674285877
 MainWindow.xaml;Views\AboutView.xaml;Views\AlgorithmView.xaml;Views\AnalysisView.xaml;Views\BoyerMooreView.xaml;Views\GuideView.xaml;Views\HomeView.xaml;Views\KMPView.xaml;Views\NaiveView.xaml;Views\RabinKarpView.xaml;
 
-True
+False
 
