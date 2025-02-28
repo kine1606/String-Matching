@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace string_matching_algorithm.ViewModels; 
+//brute force : vet' can.
 public class NaiveViewModel : ViewModelBase {
     public ICommand NavigateAlgorithmCommand { get; set; }
 
