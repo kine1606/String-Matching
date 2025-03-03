@@ -118,9 +118,9 @@ public class BoyerMooreViewModel : ViewModelBase {
     }
     public async Task SearchAsync(object? parameter = null) {
         ResultText = string.Empty;
-
         int m = PatList.Count;
         int n = TxtList.Count;
+
         int[] badchar = new int[NO_OF_CHARS];
         //find last character
         badCharHeuristic(PatList.Select(item => item.Text[0]).ToArray(), m, badchar);

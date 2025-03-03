@@ -12,5 +12,19 @@
     <StackPanel>
         <TextBlock Text="Gudie" />
         <Button Command="{Binding NavigateHomeCommand}" Content="Back" />
+        <TextBlock Text="Ứng dụng cho phép bạn hiểu rõ về các giải thuật một cách trực quan nhất" />
+        <TextBlock Text="1. Alogorithm - Giải thuật (Chọn giải thuật mà bạn muốn tìm hiểu) " />
+        <TextBlock Text="Bao gồm:" />
+        <TextBlock Text="Naive - giải thuật cơ bản nhất của String-Matching" />
+        <TextBlock Text="Boyer-Moore" />
+        <TextBlock Text="KMP" />
+        <TextBlock Text="Rabin Karp" />
+        <TextBlock Text="2. Chọn vào giải thuật mà bạn muốn tìm hiểu" />
+        <TextBlock Text="Các thao tác trên giải thuật bao gồm: " />
+        <TextBlock Text="Search - sau khi đã nhập vào chuỗi text và pattern nhấn vào search để trực quan hóa dữ liệu" />
+        <TextBlock Text="Result - xem các thao tác trên chuỗi vừa nhập và đợi nhận kết quả từ màn hình" />
+        <TextBlock Text="Random Text - Cho một chuỗi text ngẫu nhiên" />
+        <TextBlock Text="Random Pattern - Cho một chuỗi pattern ngẫu nhiên" />
+        <TextBlock Text="Time - Thời gian thực hiện tác vụ đơn vị là ms" />
     </StackPanel>
 </UserControl>

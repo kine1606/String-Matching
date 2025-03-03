@@ -10,6 +10,7 @@ using System.Windows.Input;
 
 namespace string_matching_algorithm.ViewModels; 
 public class GuideViewModel :ViewModelBase {
+
     public ICommand NavigateHomeCommand { get; set; }
 
     public GuideViewModel(NavigationStore navigationStore) {
