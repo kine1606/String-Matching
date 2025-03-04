@@ -10,6 +10,10 @@
     Title="MainWindow"
     Width="800"
     Height="450"
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterScreen"
+    WindowState="Maximized"
+    WindowStyle="SingleBorderWindow"
     mc:Ignorable="d">
     <ContentControl Content="{Binding CurrentViewModel}">
         <ContentControl.Resources>

@@ -22,7 +22,7 @@ public class AboutViewModel : ViewModelBase {
 
     public AboutViewModel(NavigationStore navigationStore) {
         NavigateHomeCommand = new NavigateCommand<HomeViewModel>(navigationStore, () => new HomeViewModel(navigationStore));
-        AboutMe = "Nguyễn Trung Kiên - 23520802\nHồ Nguyễn Tài Lợi - 23520869\n Đội ngũ phát triển ứng dụng đa nên tảng \n";
+        AboutMe = "Nguyễn Trung Kiên - 23520802\nHồ Nguyễn Tài Lợi - 23520869\nĐội ngũ phát triển ứng dụng đa nền tảng";
     }
 
 }

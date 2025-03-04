@@ -146,7 +146,7 @@ public class BoyerMooreViewModel : ViewModelBase {
                 // Match found
                 ResultText += $"Pattern occurs at shift = {s}\n";
                 OnPropertyChanged(nameof(ResultText));
-                await Task.Delay(3000);
+                await Task.Delay(int.Parse(AnimationSpeed) * 2);
                 s += (s + m < n) ? m - badchar[TxtList[s + m].Text[0]] : 1;
             }
             else {
