@@ -126,10 +126,10 @@ public class NaiveViewModel : ViewModelBase {
 
         for (int i = 0; i <= N - M; i++) {
             int j;
-
+            
             for (j = 0; j < M; j++) {
-                TxtList[i + j].Foreground = Brushes.Red;
-                PatList[j].Foreground = Brushes.Red;
+                TxtList[i + j].Foreground = Brushes.Blue;
+                PatList[j].Foreground = Brushes.Blue;
                 OnPropertyChanged(nameof(TxtList));
                 await Task.Delay(int.Parse(AnimationSpeed));
                 if (TxtList[i + j].Text[0] != PatList[j].Text[0]) {
@@ -140,7 +140,7 @@ public class NaiveViewModel : ViewModelBase {
             if (j == M) {
                 ResultText += $"Pattern occurs at shift = {i}\n";
                 OnPropertyChanged(nameof(ResultText));
-                await Task.Delay(3000);
+                await Task.Delay(int.Parse(AnimationSpeed) * 2);
             }
             //reset foreground pattern
             foreach (var item in PatList.Where(p => p.Foreground != Brushes.Black)) {

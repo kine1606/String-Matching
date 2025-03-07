@@ -118,9 +118,9 @@ public class BoyerMooreViewModel : ViewModelBase {
     }
     public async Task SearchAsync(object? parameter = null) {
         ResultText = string.Empty;
-
         int m = PatList.Count;
         int n = TxtList.Count;
+
         int[] badchar = new int[NO_OF_CHARS];
         //find last character
         badCharHeuristic(PatList.Select(item => item.Text[0]).ToArray(), m, badchar);
@@ -146,7 +146,7 @@ public class BoyerMooreViewModel : ViewModelBase {
                 // Match found
                 ResultText += $"Pattern occurs at shift = {s}\n";
                 OnPropertyChanged(nameof(ResultText));
-                await Task.Delay(3000);
+                await Task.Delay(int.Parse(AnimationSpeed) * 2);
                 s += (s + m < n) ? m - badchar[TxtList[s + m].Text[0]] : 1;
             }
             else {

@@ -4,31 +4,50 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:string_matching_algorithm.Views"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     d:DesignHeight="450"
     d:DesignWidth="800"
-    Background="#ffff"
+    Background="#fffc"
     mc:Ignorable="d">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
 
         <TextBlock
             Grid.Row="0"
-            FontSize="28"
-            Text="Home" />
-        <TextBlock
-            Grid.Row="1"
-            Margin="0,20,0,0"
-            Text="{Binding WelcomeMessage}" />
-        <StackPanel Grid.Row="2">
-            <Button Command="{Binding NavigateAlgorithmCommand}" Content="Algorithm" />
-            <Button Command="{Binding NavigateAnalysisCommand}" Content="Analysis" />
-            <Button Command="{Binding NavigateAboutCommand}" Content="About" />
-            <Button Command="{Binding NavigateGuideCommand}" Content="Guide" />
+            Padding="10"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="150"
+            FontWeight="Bold"
+            Text="AlgoMatch" />
+        <StackPanel Grid.Row="1">
+            <Button
+                Width="500"
+                Height="auto"
+                Margin="30,100,30,30"
+                Command="{Binding NavigateAlgorithmCommand}"
+                Content="Algorithm"
+                FontSize="50"
+                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                ToolTip="Resource name: MaterialDesignRaisedSecondaryButton" />
+            <Button
+                Width="500"
+                Height="auto"
+                Margin="30,0,30,30"
+                Command="{Binding NavigateGuideCommand}"
+                Content="Guide"
+                FontSize="50" />
+            <Button
+                Width="500"
+                Height="auto"
+                Margin="30,0"
+                Command="{Binding NavigateAboutCommand}"
+                Content="About Me"
+                FontSize="50" />
         </StackPanel>
 
     </Grid>

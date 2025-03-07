@@ -7,10 +7,47 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     d:DesignHeight="450"
     d:DesignWidth="800"
-    Background="#ffff"
+    Background="#fffd"
     mc:Ignorable="d">
     <StackPanel>
-        <TextBlock Text="Gudie" />
-        <Button Command="{Binding NavigateHomeCommand}" Content="Back" />
+        <TextBlock
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="50"
+            FontWeight="Bold">
+            Tutorial for Beginner
+        </TextBlock>
+        <RichTextBox
+            Height="650"
+            Padding="30"
+            FontSize="30"
+            IsReadOnly="True"
+            VerticalScrollBarVisibility="Hidden">
+            <FlowDocument>
+                <Paragraph>Ứng dụng cho phép bạn hiểu rõ về các giải thuật một cách trực quan nhất</Paragraph>
+                <Paragraph>1. Alogorithm - Giải thuật (Chọn giải thuật mà bạn muốn tìm hiểu)</Paragraph>
+                <Paragraph Margin="20,0">Bao gồm:</Paragraph>
+                <Paragraph Margin="40,0">* Naive - giải thuật cơ bản nhất của String-Matching</Paragraph>
+                <Paragraph Margin="40,0">* Boyer-Moore - Duyệt từ phải sang trái, sử dụng quy tắc dịch chuyển để bỏ qua nhiều ký tự nhất có thể.</Paragraph>
+                <Paragraph Margin="40,0">* KMP - Tránh việc so sánh lại các ký tự đã biết bằng cách sử dụng mảng LPS</Paragraph>
+                <Paragraph Margin="40,0">* Rabin Karp - Dùng hàm băm (hashing) để so sánh chuỗi con nhanh hơn.</Paragraph>
+                <Paragraph>2. Chọn vào giải thuật mà bạn muốn tìm hiểu</Paragraph>
+                <Paragraph Margin="10,0">Các thao tác trên giải thuật bao gồm:</Paragraph>
+                <Paragraph Margin="40,0">* Search - sau khi đã nhập vào chuỗi text và pattern nhấn vào search để trực quan hóa dữ liệu</Paragraph>
+                <Paragraph Margin="40,0">* Result - xem các thao tác trên chuỗi vừa nhập và đợi nhận kết quả từ màn hình</Paragraph>
+                <Paragraph Margin="40,0">* Random Text - Cho một chuỗi text ngẫu nhiên</Paragraph>
+                <Paragraph Margin="40,0">* Random Pattern - Cho một chuỗi pattern ngẫu nhiên</Paragraph>
+                <Paragraph Margin="40,0">* Time - Thời gian thực hiện tác vụ đơn vị là ms</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button
+            Width="200"
+            Height="auto"
+            Background="PaleVioletRed"
+            Command="{Binding NavigateHomeCommand}"
+            Content="Back"
+            FontSize="50" />
+
     </StackPanel>
+
 </UserControl>

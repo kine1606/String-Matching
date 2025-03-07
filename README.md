@@ -1,4 +1,4 @@
-# DSA_Advanced
+# String-Matching
 
 Our application provides an intuitive and visual explanation of three key string-searching algorithms:
 

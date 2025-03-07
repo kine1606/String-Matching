@@ -7,14 +7,51 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     d:DesignHeight="450"
     d:DesignWidth="800"
-    Background="#ffff"
+    Background="#fffd"
     mc:Ignorable="d">
     <StackPanel>
-        <Button Command="{Binding NavigateHomeCommand}" Content="Back" />
-        <Label Content="Algorithm" />
-        <Button Command="{Binding NavigateNaiveCommand}" Content="Naive Algorithm" />
-        <Button Command="{Binding NavigateKMPCommand}" Content="KMP Algorithm" />
-        <Button Command="{Binding NavigateRabinKarpCommand}" Content="Rabin Karp Algorithm" />
-        <Button Command="{Binding NavigateBoyerMooreCommand}" Content="Boyer Moore Algorithm" />
+        <Label
+            Margin="0,75"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Content="Algorithm"
+            FontSize="130"
+            FontWeight="Bold"
+            Foreground="#000" />
+        <Button
+            Width="300"
+            Height="auto"
+            Margin="0,20"
+            Command="{Binding NavigateNaiveCommand}"
+            Content="Naive"
+            FontSize="40" />
+        <Button
+            Width="300"
+            Height="auto"
+            Command="{Binding NavigateKMPCommand}"
+            Content="KMP"
+            FontSize="40" />
+        <Button
+            Width="300"
+            Height="auto"
+            Margin="0,20,0,0"
+            Command="{Binding NavigateRabinKarpCommand}"
+            Content="Rabin Karp"
+            FontSize="40" />
+        <Button
+            Width="300"
+            Height="auto"
+            Margin="0,20,0,0"
+            Command="{Binding NavigateBoyerMooreCommand}"
+            Content="Boyer-Moore"
+            FontSize="40" />
+        <Button
+            Width="300"
+            Height="auto"
+            Margin="0,20"
+            Background="PaleVioletRed"
+            Command="{Binding NavigateHomeCommand}"
+            Content="Back"
+            FontSize="40" />
     </StackPanel>
 </UserControl>
