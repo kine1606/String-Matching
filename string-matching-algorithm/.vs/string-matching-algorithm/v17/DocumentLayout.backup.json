@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\GitHub\\DSA_Advanced\\string-matching-algorithm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|d:\\github\\dsa_advanced\\string-matching-algorithm\\views\\rabinkarpview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:views\\rabinkarpview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|d:\\github\\dsa_advanced\\string-matching-algorithm\\viewmodels\\kmpviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:viewmodels\\kmpviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|d:\\github\\dsa_advanced\\string-matching-algorithm\\viewmodels\\boyermooreviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:viewmodels\\boyermooreviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|d:\\github\\dsa_advanced\\string-matching-algorithm\\viewmodels\\rabinkarpviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,16 +19,12 @@
       "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:views\\kmpview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|d:\\github\\dsa_advanced\\string-matching-algorithm\\viewmodels\\kmpviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:viewmodels\\kmpviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|d:\\github\\dsa_advanced\\string-matching-algorithm\\views\\boyermooreview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:views\\boyermooreview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|d:\\github\\dsa_advanced\\string-matching-algorithm\\viewmodels\\boyermooreviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:viewmodels\\boyermooreviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|d:\\github\\dsa_advanced\\string-matching-algorithm\\views\\rabinkarpview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4736317-1100-4DFA-9B52-62A4229518D6}|string-matching-algorithm.csproj|solutionrelative:views\\rabinkarpview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "KMPViewModel.cs",
               "DocumentMoniker": "D:\\GitHub\\DSA_Advanced\\string-matching-algorithm\\ViewModels\\KMPViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\KMPViewModel.cs",
-              "ToolTip": "D:\\GitHub\\DSA_Advanced\\string-matching-algorithm\\ViewModels\\KMPViewModel.cs",
-              "RelativeToolTip": "ViewModels\\KMPViewModel.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAUwFYAAABGAAAAAAAAAA==",
+              "ToolTip": "D:\\GitHub\\DSA_Advanced\\string-matching-algorithm\\ViewModels\\KMPViewModel.cs*",
+              "RelativeToolTip": "ViewModels\\KMPViewModel.cs*",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAUwIAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-28T06:45:51.321Z",
               "IsPinned": true,
@@ -52,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "KMPView.xaml",
               "DocumentMoniker": "D:\\GitHub\\DSA_Advanced\\string-matching-algorithm\\Views\\KMPView.xaml",
               "RelativeDocumentMoniker": "Views\\KMPView.xaml",
@@ -73,25 +73,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RabinKarpView.xaml",
-              "DocumentMoniker": "D:\\GitHub\\DSA_Advanced\\string-matching-algorithm\\Views\\RabinKarpView.xaml",
-              "RelativeDocumentMoniker": "Views\\RabinKarpView.xaml",
-              "ToolTip": "D:\\GitHub\\DSA_Advanced\\string-matching-algorithm\\Views\\RabinKarpView.xaml",
-              "RelativeToolTip": "Views\\RabinKarpView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-28T13:11:32.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RabinKarpVIewModel.cs",
               "DocumentMoniker": "D:\\GitHub\\DSA_Advanced\\string-matching-algorithm\\ViewModels\\RabinKarpVIewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\RabinKarpVIewModel.cs",
               "ToolTip": "D:\\GitHub\\DSA_Advanced\\string-matching-algorithm\\ViewModels\\RabinKarpVIewModel.cs",
               "RelativeToolTip": "ViewModels\\RabinKarpVIewModel.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAHsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAADwv3sAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-28T13:11:29.142Z",
               "EditorCaption": ""
@@ -111,12 +99,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "RabinKarpView.xaml",
+              "DocumentMoniker": "D:\\GitHub\\DSA_Advanced\\string-matching-algorithm\\Views\\RabinKarpView.xaml",
+              "RelativeDocumentMoniker": "Views\\RabinKarpView.xaml",
+              "ToolTip": "D:\\GitHub\\DSA_Advanced\\string-matching-algorithm\\Views\\RabinKarpView.xaml",
+              "RelativeToolTip": "Views\\RabinKarpView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-28T13:11:32.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "BoyerMooreViewModel.cs",
               "DocumentMoniker": "D:\\GitHub\\DSA_Advanced\\string-matching-algorithm\\ViewModels\\BoyerMooreViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\BoyerMooreViewModel.cs",
               "ToolTip": "D:\\GitHub\\DSA_Advanced\\string-matching-algorithm\\ViewModels\\BoyerMooreViewModel.cs",
               "RelativeToolTip": "ViewModels\\BoyerMooreViewModel.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAqwEwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAgwHwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-28T06:09:50.635Z",
               "EditorCaption": ""
