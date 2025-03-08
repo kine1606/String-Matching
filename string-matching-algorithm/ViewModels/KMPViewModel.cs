@@ -14,6 +14,22 @@ public class KMPViewModel : ViewModelBase {
     #region Properties
     //param goc luu tru du lieu
 
+    public int NO_OF_CHARS = 256;
+    public Brush FOREGROUND_DEFAULT = Brushes.Black;
+    private string _animationSpeed = "1000";
+    public string AnimationSpeed
+    {
+        get => _animationSpeed;
+        set
+        {
+            if (_animationSpeed != value)
+            {
+                _animationSpeed = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+
     private string _patternString;
     public string PatternString
     {
@@ -35,6 +51,28 @@ public class KMPViewModel : ViewModelBase {
         }
     }
 
+
+    private string _lpsString;
+    public string LPSString
+    {
+        get => _lpsString;
+        set
+        {
+            _lpsString = value;
+            OnPropertyChanged();
+        }
+    }
+    private ObservableCollection<TextItem> _lpsList = new();
+    public ObservableCollection<TextItem> LPSList
+    {
+        get => _lpsList;
+        set
+        {
+            _lpsList = value;
+            OnPropertyChanged(nameof(LPSString));
+        }
+    }
+
     private ObservableCollection<TextItem> _txtList = new();
     public ObservableCollection<TextItem> TxtList { 
         get => _txtList;
@@ -51,23 +89,52 @@ public class KMPViewModel : ViewModelBase {
         get { return _patList; }
         set {_patList = value; OnPropertyChanged(nameof(PatternString)); }
     }
+
+
+    public string ResultText
+    {
+        get => _resultText;
+        set
+        {
+            if (_resultText != value)
+            {
+                _resultText = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+    private string _resultText;
     #endregion
     public ICommand NavigateAlgorithmCommand { get; set; }
 
     public ICommand SearchCommand { get; set; }
-    public ICommand StepOverCommand { get; set; }
-    public ICommand StartCommand { get; set; }
-    public ICommand RefreshCommand { get; set; }
     public ICommand ResultCommand { get; set; }
+    public ICommand RandomTextCommand { get; set; }
+    public ICommand RandomPatternCommand { get; set; }
     public KMPViewModel(NavigationStore navigationStore) {
         NavigateAlgorithmCommand = new NavigateCommand<AlgorithmViewModel>(navigationStore, () => new AlgorithmViewModel(navigationStore));
         SearchCommand = new RelayCommand<object>(Render);
         ResultCommand = new RelayCommand<object>(KMP);
+        RandomTextCommand = new RelayCommand<object>((o) => { TextString = RandomString(); });
+        RandomPatternCommand = new RelayCommand<object>((o) => { PatternString = RandomString(4); });
+
+    }
+
+    public string RandomString(int length = 12)
+    {
+        Random random = new Random();
+        const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        return new string(Enumerable.Repeat(chars, length)
+                                   .Select(s => s[random.Next(s.Length)]).ToArray());
     }
     public void Render(object? parameter = null)
     {
         if (parameter == null)
         {
+            LPSString = null;
+            List<int> lps = new List<int>(new int[PatternString.Length]);
+            longestPrefixSuffix(PatternString, ref lps);
+            LPSList.Clear();
             TxtList.Clear();
             PatList.Clear();
             if (!(string.IsNullOrWhiteSpace(TextString) || string.IsNullOrWhiteSpace(PatternString)))
@@ -79,6 +146,11 @@ public class KMPViewModel : ViewModelBase {
                 foreach (var item in PatternString)
                 {
                     PatList.Add(new TextItem { Text = item.ToString(), Foreground = Brushes.Black });
+                }
+                foreach (var item in lps)
+                {
+                    LPSString += item.ToString();
+                    LPSList.Add(new TextItem { Text = item.ToString(), Foreground = Brushes.Black });
                 }
             }
         }
@@ -116,14 +188,12 @@ public class KMPViewModel : ViewModelBase {
         int j = 0;
         int textLength = TextString.Length;
         int patternLength = PatternString.Length;
-        
         List<int> lps = new List<int>(new int[patternLength]);
-        //find lps table
         longestPrefixSuffix(PatternString, ref lps);
         while (i < textLength)
         {
-            PatList[j].Foreground = Brushes.Red;
             TxtList[i].Foreground = Brushes.Red;
+            PatList[j].Foreground = Brushes.Red;
             if (PatList[j].Text == TxtList[i].Text)
             {
                 i++;
@@ -155,7 +225,7 @@ public class KMPViewModel : ViewModelBase {
 
     public class TextItem : INotifyPropertyChanged
     {
-        private string _text;
+        private string _text; 
         private Brush _foreground = Brushes.Black;
 
         public string Text

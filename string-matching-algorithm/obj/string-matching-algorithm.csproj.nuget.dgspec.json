@@ -49,6 +49,10 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
             "System.Windows.Interactivity.WPF": {
               "target": "Package",
               "version": "[2.0.20525, )"
