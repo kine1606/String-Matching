@@ -56,7 +56,7 @@ namespace string_matching_algorithm.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/string-matching-algorithm;V1.0.0.0;component/views/homeview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/string-matching-algorithm;component/views/homeview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\HomeView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

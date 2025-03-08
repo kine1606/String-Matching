@@ -6,6 +6,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace string_matching_algorithm.ViewModels;
 public class KMPViewModel : ViewModelBase {

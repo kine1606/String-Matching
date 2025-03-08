@@ -18,7 +18,8 @@ namespace string_matching_algorithm.Views {
     /// Interaction logic for RabinKarpView.xaml
     /// </summary>
     public partial class RabinKarpView : UserControl {
-        public RabinKarpView() {
+        public RabinKarpView()
+        {
             InitializeComponent();
         }
     }

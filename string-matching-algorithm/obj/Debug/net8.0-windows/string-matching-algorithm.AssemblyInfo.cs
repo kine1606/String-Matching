@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("string-matching-algorithm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f68bff793e2dc4c39ba7f228677411853af3f156")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9af684f0bd70346fa65f6626ea0ba20e02fcdeba")]
 [assembly: System.Reflection.AssemblyProductAttribute("string-matching-algorithm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("string-matching-algorithm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

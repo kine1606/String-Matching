@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\GitHub\DSA_Advanced\string-matching-algorithm\App.xaml
-10-2101054519
+15-914681266
 
-29486917639
+35881438422
 2031935120050
-MainWindow.xaml;Views\AboutView.xaml;Views\AlgorithmView.xaml;Views\AnalysisView.xaml;Views\BoyerMooreView.xaml;Views\GuideView.xaml;Views\HomeView.xaml;Views\KMPView.xaml;Views\NaiveView.xaml;Views\RabinKarpView.xaml;
+MainWindow.xaml;Views\AboutView.xaml;Views\AlgorithmView.xaml;Views\BoyerMoore\BoyerMooreView.xaml;Views\BoyerMoore\CodeBoyerMooreView.xaml;Views\GuideView.xaml;Views\HomeView.xaml;Views\KMPView.xaml;Views\KMP\CodeKMPView.xaml;Views\KMP\KMPView.xaml;Views\Naive\CodeNaiveView.xaml;Views\Naive\NaiveView.xaml;Views\RabinKarpView.xaml;Views\RabinKarp\CodeRabinKarpView.xaml;Views\RabinKarp\RabinKarpView.xaml;
 
-False
+True
 
