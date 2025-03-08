@@ -8,8 +8,6 @@
     xmlns:viewmodels="clr-namespace:string_matching_algorithm.ViewModels"
     xmlns:views="clr-namespace:string_matching_algorithm.Views"
     Title="MainWindow"
-    Width="800"
-    Height="450"
     ResizeMode="NoResize"
     WindowStartupLocation="CenterScreen"
     WindowState="Maximized"
@@ -33,9 +31,6 @@
                 <views:AlgorithmView />
             </DataTemplate>
 
-            <DataTemplate DataType="{x:Type viewmodels:AnalysisViewModel}">
-                <views:AnalysisView />
-            </DataTemplate>
 
             <DataTemplate DataType="{x:Type viewmodels:NaiveViewModel}">
                 <views:NaiveView />
@@ -53,6 +48,13 @@
                 <views:BoyerMooreView />
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewmodels:CodeBoyerMooreViewModel}">
+                <views:CodeBoyerMooreView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:CodeNaiveViewModel}">
+                <views:CodeNaiveView />
+            </DataTemplate>
 
         </ContentControl.Resources>
     </ContentControl>

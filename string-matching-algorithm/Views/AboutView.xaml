@@ -18,26 +18,26 @@
             FontWeight="Bold">
             About Me
         </TextBlock>
-        <RichTextBox
-            Padding="20"
-            Height="auto"
-            Focusable="False"
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <TextBox
+                Background="#fffd"
+                BorderThickness="0"
+                FontSize="30"
+                FontWeight="DemiBold"
+                IsReadOnly="True"
+                Style="{x:Null}"
+                Text="{Binding AboutMe}" />
+        </ScrollViewer>
+
+        <TextBlock
+            Margin="70,-40,0,0"
             FontSize="30"
-            IsReadOnly="True"
-            VerticalScrollBarVisibility="Hidden">
-            <FlowDocument>
-                <Paragraph>Nhà sáng lập</Paragraph>
-                <Paragraph>Nguyễn Trung Kiên - 23520802</Paragraph>
-                <Paragraph>Hồ Nguyễn Tài Lợi - 23520869</Paragraph>
-                <Paragraph>Đội ngũ phát triển phần mềm tinh nhuệ của quốc gia</Paragraph>
-            </FlowDocument>
-        </RichTextBox>
-        <TextBlock FontSize="30" Padding="20">
+            FontWeight="DemiBold">
             Xem chi tiết ứng dụng và chúng tôi tại <Hyperlink NavigateUri="https://github.com/kine1606/String-Matching" RequestNavigate="Hyperlink_RequestNavigate">Github</Hyperlink></TextBlock>
         <Button
-            Margin="0 150 0 0"
             Width="200"
             Height="auto"
+            Margin="0,150,0,0"
             Background="PaleVioletRed"
             Command="{Binding NavigateHomeCommand}"
             Content="Back"

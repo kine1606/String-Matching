@@ -10,8 +10,34 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\brain.png" />
+    <None Remove="Assets\c-sharp.png" />
+    <None Remove="Assets\cpp_logo.png" />
+    <None Remove="Assets\Csharp_Logo.png" />
+    <None Remove="Assets\java-logo.png" />
+    <None Remove="Assets\java.png" />
+    <None Remove="Assets\lightbulb.png" />
+    <None Remove="Assets\python-logo.png" />
+    <None Remove="Assets\python.png" />
+    <None Remove="Assets\wireless.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="5.2.1" />
     <PackageReference Include="System.Windows.Interactivity.WPF" Version="2.0.20525" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\brain.png" />
+    <Resource Include="Assets\c-sharp.png" />
+    <Resource Include="Assets\cpp_logo.png" />
+    <Resource Include="Assets\Csharp_Logo.png" />
+    <Resource Include="Assets\java-logo.png" />
+    <Resource Include="Assets\java.png" />
+    <Resource Include="Assets\lightbulb.png" />
+    <Resource Include="Assets\python-logo.png" />
+    <Resource Include="Assets\python.png" />
+    <Resource Include="Assets\wireless.png" />
   </ItemGroup>
 
 </Project>
