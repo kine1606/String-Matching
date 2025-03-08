@@ -2,6 +2,8 @@
 using NavigationMVVM.ViewModels;
 using string_matching_algorithm.Commands;
 using string_matching_algorithm.Stores;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Windows;
 using System.Windows.Input;
 
@@ -9,15 +11,6 @@ namespace string_matching_algorithm.ViewModels;
 public class KMPViewModel : ViewModelBase {
     #region Properties
     //param goc luu tru du lieu
-    private string _nameTemp;
-    //param su dung thuc te
-    public string NameTemp {
-        get => _nameTemp;
-        set {
-            _nameTemp = value;
-            OnPropertyChanged();
-        }
-    }
 
     private string _patternString;
     public string PatternString
@@ -39,6 +32,23 @@ public class KMPViewModel : ViewModelBase {
             OnPropertyChanged();
         }
     }
+
+    private ObservableCollection<TextItem> _txtList = new();
+    public ObservableCollection<TextItem> TxtList { 
+        get => _txtList;
+        set
+        {
+            _txtList = value;
+            OnPropertyChanged(nameof(TextString));
+        }
+        }
+
+    private ObservableCollection<TextItem> _patList = new();
+    public ObservableCollection<TextItem> PatList
+    {
+        get { return _patList; }
+        set {_patList = value; OnPropertyChanged(nameof(PatternString)); }
+    }
     #endregion
     public ICommand NavigateAlgorithmCommand { get; set; }
     public ICommand SearchCommand { get; set; }
@@ -48,35 +58,28 @@ public class KMPViewModel : ViewModelBase {
     public ICommand ResultCommand { get; set; }
     public KMPViewModel(NavigationStore navigationStore) {
         NavigateAlgorithmCommand = new NavigateCommand<AlgorithmViewModel>(navigationStore, () => new AlgorithmViewModel(navigationStore));
-        
-        //param binding 
-        NameTemp = "honguyen tai loi";
-        //function binding tu command 
-        //Click1Command = new RelayCommand<object>(Click1);
-        //object la mot doi tuong can truyen vao 
-        //truyen vao mot ham Click va thuc hien tai ham click
-        //trigger
-        //Click2Command = new RelayCommand<object>(Click2);
-
-        //Click3Command = new RelayCommand<object>(Click3);
-
+        SearchCommand = new RelayCommand<object>(Render);
         ResultCommand = new RelayCommand<object>(KMP);
     }
-    //public void Click1(object sender) {
-    //    //code command
-    //    MessageBox.Show("Command da duoc thuc hien");
-    //}
-    //public void Click2(object sender) {
-    //    //code trigger
-    //    MessageBox.Show("Toi nhan duoc mot trigger");
-    //}
-    //public void Click3(object sender)
-    //{
-    //    //code command
-    //    int res = KMP(TextString, PatternString);
-    //    MessageBox.Show(res.ToString()); 
-    //}
-
+    public void Render(object? parameter = null)
+    {
+        if (parameter == null)
+        {
+            TxtList.Clear();
+            PatList.Clear();
+            if (!(string.IsNullOrWhiteSpace(TextString) || string.IsNullOrWhiteSpace(PatternString)))
+            {
+                foreach (var item in TextString)
+                {
+                    TxtList.Add(new TextItem { Text = item.ToString(), Foreground = Brushes.Black });
+                }
+                foreach (var item in PatternString)
+                {
+                    PatList.Add(new TextItem { Text = item.ToString(), Foreground = Brushes.Black });
+                }
+            }
+        }
+    }
     public void longestPrefixSuffix(string pattern, ref List<int> lps)
     {
         int length = 0;
@@ -106,19 +109,19 @@ public class KMPViewModel : ViewModelBase {
      public void KMP(object? parameter = null)
     {
         List<int> res = new List<int>();
-        char[] txt = TextString.ToCharArray();
-        char[] pat = PatternString.ToCharArray();
         int i = 0;
         int j = 0;
         int textLength = TextString.Length;
         int patternLength = PatternString.Length;
-
+        
         List<int> lps = new List<int>(new int[patternLength]);
         //find lps table
         longestPrefixSuffix(PatternString, ref lps);
         while (i < textLength)
         {
-            if (pat[j] == txt[i])
+            PatList[j].Foreground = Brushes.Red;
+            TxtList[i].Foreground = Brushes.Red;
+            if (PatList[j].Text == TxtList[i].Text)
             {
                 i++;
                 j++;
@@ -146,4 +149,38 @@ public class KMPViewModel : ViewModelBase {
             MessageBox.Show(item.ToString() + " ");
         }
     }
+
+    public class TextItem : INotifyPropertyChanged
+    {
+        private string _text;
+        private Brush _foreground = Brushes.Black;
+
+        public string Text
+        {
+            get => _text;
+            set
+            {
+                _text = value;
+                OnPropertyChanged(nameof(Text));
+            }
+        }
+
+        public Brush Foreground
+        {
+            get => _foreground;
+            set
+            {
+                _foreground = value;
+                OnPropertyChanged(nameof(Foreground));
+            }
+        }
+        public event PropertyChangedEventHandler? PropertyChanged;
+
+        protected void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+    }
+
 }
+
