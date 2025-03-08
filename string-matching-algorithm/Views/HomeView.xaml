@@ -15,7 +15,23 @@
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
-
+        <Image
+            Width="100"
+            Height="100"
+            HorizontalAlignment="Right"
+            Source="/Assets/brain.png" />
+        <Image
+            Width="100"
+            Height="100"
+            HorizontalAlignment="Left"
+            Source="/Assets/wireless.png" />
+        <Image
+            Grid.Row="1"
+            Width="100"
+            Height="100"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Bottom"
+            Source="/Assets/lightbulb.png" />
         <TextBlock
             Grid.Row="0"
             Padding="10"

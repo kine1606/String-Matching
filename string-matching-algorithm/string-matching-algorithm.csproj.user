@@ -13,10 +13,16 @@
     <Compile Update="Views\AlgorithmView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\AnalysisView.xaml.cs">
+    <Compile Update="Views\BoyerMoore\BoyerMooreView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\BoyerMooreView.xaml.cs">
+    <Compile Update="Views\BoyerMoore\CodeBoyerMooreView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\KMP\CodeKMPView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Naive\CodeNaiveView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\GuideView.xaml.cs">
@@ -25,13 +31,16 @@
     <Compile Update="Views\HomeView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\KMPView.xaml.cs">
+    <Compile Update="Views\KMP\KMPView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\NaiveView.xaml.cs">
+    <Compile Update="Views\Naive\NaiveView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\RabinKarpView.xaml.cs">
+    <Compile Update="Views\RabinKarp\CodeRabinKarpView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\RabinKarp\RabinKarpView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -45,10 +54,16 @@
     <Page Update="Views\AlgorithmView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\AnalysisView.xaml">
+    <Page Update="Views\BoyerMoore\BoyerMooreView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\BoyerMooreView.xaml">
+    <Page Update="Views\BoyerMoore\CodeBoyerMooreView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\KMP\CodeKMPView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Naive\CodeNaiveView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\GuideView.xaml">
@@ -57,13 +72,16 @@
     <Page Update="Views\HomeView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\KMPView.xaml">
+    <Page Update="Views\KMP\KMPView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\NaiveView.xaml">
+    <Page Update="Views\Naive\NaiveView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\RabinKarpView.xaml">
+    <Page Update="Views\RabinKarp\CodeRabinKarpView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\RabinKarp\RabinKarpView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

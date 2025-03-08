@@ -1,11 +1,6 @@
 ﻿using NavigationMVVM.ViewModels;
 using string_matching_algorithm.Commands;
 using string_matching_algorithm.Stores;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace string_matching_algorithm.ViewModels; 
@@ -19,10 +14,16 @@ public class AboutViewModel : ViewModelBase {
     }
     private string _aboutMe;
     public ICommand NavigateHomeCommand { get; }
-
     public AboutViewModel(NavigationStore navigationStore) {
         NavigateHomeCommand = new NavigateCommand<HomeViewModel>(navigationStore, () => new HomeViewModel(navigationStore));
-        AboutMe = "Nguyễn Trung Kiên - 23520802\nHồ Nguyễn Tài Lợi - 23520869\nĐội ngũ phát triển ứng dụng đa nền tảng";
+        AboutMe = @"
+        Tên đồ án: AlgoMatch Application - Ứng dụng trực quan thuật toán đối xứng chuỗi
+        Môn học: Advanced Data Structures & Algorithms
+        Lớp học: CS523.P21
+        Giảng viên hướng dẫn: ThS. Nguyễn Thanh Sơn
+        Sinh viên 1: Nguyễn Trung Kiên - 23520802
+        Sinh viên 2: Hồ Nguyễn Tài Lợi - 23520869
+        ";
     }
 
 }
