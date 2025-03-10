@@ -33,7 +33,7 @@
             Margin="70,-40,0,0"
             FontSize="30"
             FontWeight="DemiBold">
-            Xem chi tiết ứng dụng và chúng tôi tại <Hyperlink NavigateUri="https://github.com/kine1606/String-Matching" RequestNavigate="Hyperlink_RequestNavigate">Github</Hyperlink></TextBlock>
+            Xem chi tiết ứng dụng và chúng tôi tại: <Hyperlink NavigateUri="https://github.com/kine1606/String-Matching" RequestNavigate="Hyperlink_RequestNavigate">Github</Hyperlink></TextBlock>
         <Button
             Width="200"
             Height="auto"

@@ -56,6 +56,14 @@
                 <views:CodeNaiveView />
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewmodels:CodeKMPViewModel}">
+                <views:CodeKMPView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:CodeRabinKarpViewModel}">
+                <views:CodeRabinKarpView />
+            </DataTemplate>
+
         </ContentControl.Resources>
     </ContentControl>
 </Window>

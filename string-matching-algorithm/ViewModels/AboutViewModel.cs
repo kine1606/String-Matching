@@ -17,7 +17,7 @@ public class AboutViewModel : ViewModelBase {
     public AboutViewModel(NavigationStore navigationStore) {
         NavigateHomeCommand = new NavigateCommand<HomeViewModel>(navigationStore, () => new HomeViewModel(navigationStore));
         AboutMe = @"
-        Tên đồ án: AlgoMatch Application - Ứng dụng trực quan thuật toán đối xứng chuỗi
+        Tên đồ án: AlgoMatch Application - Ứng dụng trực quan thuật toán đối sánh chuỗi
         Môn học: Advanced Data Structures & Algorithms
         Lớp học: CS523.P21
         Giảng viên hướng dẫn: ThS. Nguyễn Thanh Sơn

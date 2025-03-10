@@ -1,19 +1,11 @@
 ﻿using NavigationMVVM.ViewModels;
 using string_matching_algorithm.Commands;
 using string_matching_algorithm.Stores;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace string_matching_algorithm.ViewModels;
 public class RabinKarpVIewModel : ViewModelBase
@@ -108,8 +100,17 @@ public class RabinKarpVIewModel : ViewModelBase
         }
     }
     private string _resultText;
-    public ICommand NavigateAlgorithmCommand { get; set; }
 
+    private bool _isButtonEnabled = true;
+    public bool IsButtonEnabled {
+        get { return _isButtonEnabled; }
+        set {
+            _isButtonEnabled = value;
+            OnPropertyChanged(nameof(IsButtonEnabled));
+        }
+    }
+    public ICommand NavigateAlgorithmCommand { get; set; }
+    public ICommand NavigateCodeCommand { get; set; }
     public ICommand SearchCommand { get; set; }
     public ICommand ResultCommand { get; set; }
     public ICommand RandomTextCommand { get; set; }
@@ -117,15 +118,17 @@ public class RabinKarpVIewModel : ViewModelBase
     public RabinKarpVIewModel(NavigationStore navigationStore)
     {
         NavigateAlgorithmCommand = new NavigateCommand<AlgorithmViewModel>(navigationStore, () => new AlgorithmViewModel(navigationStore));
-        ResultCommand = new RelayCommand<object>(rabinKarp);
+        NavigateCodeCommand = new NavigateCommand<CodeRabinKarpViewModel>(navigationStore, () => new CodeRabinKarpViewModel(navigationStore));
+
+        ResultCommand = new RelayCommandAsync(async () => rabinKarp());
 
         SearchCommand = new RelayCommand<object>(Render);
 
         RandomTextCommand = new RelayCommand<object>((o) => { TextString = RandomString(); });
-        RandomPatternCommand = new RelayCommand<object>((o) => { PatternString = RandomString(4); });
+        RandomPatternCommand = new RelayCommand<object>((o) => { PatternString = RandomString(12); });
     }
 
-    public string RandomString(int length = 12)
+    public string RandomString(int length = 36)
     {
         Random random = new Random();
         const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -134,106 +137,149 @@ public class RabinKarpVIewModel : ViewModelBase
     }
     public void Render(object? parameter = null)
     {
-        if (parameter == null)
-        {
-            List<int> lps = new List<int>(new int[PatternString.Length]);
-            TxtList.Clear();
-            PatList.Clear();
-            if (!(string.IsNullOrWhiteSpace(TextString) || string.IsNullOrWhiteSpace(PatternString)))
-            {
-                foreach (var item in TextString)
-                {
-                    TxtList.Add(new TextItem { Text = item.ToString(), Foreground = Brushes.Black });
-                }
-                foreach (var item in PatternString)
-                {
-                    PatList.Add(new TextItem { Text = item.ToString(), Foreground = Brushes.Black });
-                }
-            }
-        }
-    }
-    public void rabinKarp(object? parameter = null)
-    {
-        // breaking pattern into every single char
-        // turn these char to int (ASCII) -> hash to a unique number
-        // the same with text, compare the value 
-        // if both value are equal, compare strings themself
-        // else move and use rolling hash for saving time 
-        int i, j;
-        int n = TextString.Length;
-        int m = PatternString.Length;
-
-        if(n < m)
-        {
-            // can't compare here
-            return;
-        }
-        // h is largest pow number like 10^99 if pattern has 100 elements
-        int h = 1;
-        int prime = 101;
-
-        // d is the amount of character in ASCII, can be declined to 26 (alphabet)
-        // or any number (range of bound that you gave to it) 
-        int d = 256;
-
-        int p_hash = 0;
-        int t_hash = 0;
-
-        // 10^99 ??? too large 
-        // 10^2 % 101 = (10%101 * 10%101 )% 101
-        // 10^3 $ 101 = (10^2 % 101) * (10%101) %101
-        // ... 
-        // 10^99 = (10^98 % 101) * (10%101)) % 101
-        // -> (a*b)%c = ((a%c) * (b%c)) %c
-        for (i = 0; i < m - 1; i++)
-        {
-            h = (h * d) % prime;
-        }
-        // pow(p_hash, d), d = 10 
-        // i.g pattern = abc a-1 b-2 c-3
-        // 10*0 + 1 ) %101
-        // 10*1 + 2 ) %101
-        for (i = 0; i < m; i++)
-        {
-            p_hash = (d * p_hash + PatternString[i]) % prime;
-            t_hash = (d * t_hash + TextString[i]) % prime;
-        }
-
-        ValuePattern = p_hash.ToString();
-        ValueText = t_hash.ToString();
-
-        for (i = 0; i < n - m + 1; i++)
-        {
-            if (p_hash == t_hash)
-            {
-                for (j = 0; j < m; j++)
-                {
-                    // spurious hit occurs
-                    // when value are both same but the order is not true 
-                    // or mismatch like 'abd' and 'bbc' 
-                    if (PatternString[j] != TextString[i + j]) break;
-                }
-                // exact match 
-                if (j == m)
-                {
-                    MessageBox.Show("Pattern found at: " + i.ToString());
-                }
-            }
-            else
-            {
-                if (i < n - m)
-                {
-                    //rolling hash 
-                    t_hash = (d * (t_hash - TextString[i] * h) + (TextString[i + m])) % prime;
-                    if (t_hash < 0)
-                    {
-                        // guarantee if t_hash is negative, converting it to positive
-                        t_hash += prime;
+        try {
+            if (parameter == null) {
+                ResultText = string.Empty;
+                TxtList.Clear();
+                PatList.Clear();
+                if (!(string.IsNullOrWhiteSpace(TextString) || string.IsNullOrWhiteSpace(PatternString))) {
+                    foreach (var item in TextString) {
+                        TxtList.Add(new TextItem { Text = item.ToString(), Foreground = Brushes.Black });
+                    }
+                    foreach (var item in PatternString) {
+                        PatList.Add(new TextItem { Text = item.ToString(), Foreground = Brushes.Black });
                     }
                 }
             }
         }
+        catch (Exception ex) {
+            MessageBox.Show("Có lỗi xảy ra vui lòng thử lại");
+        }
+    }
+    public async Task rabinKarp(object? parameter = null)
+    {
+        try {
+            IsButtonEnabled = false;
+            ResultText = string.Empty;
+            // breaking pattern into every single char
+            // turn these char to int (ASCII) -> hash to a unique number
+            // the same with text, compare the value 
+            // if both value are equal, compare strings themself
+            // else move and use rolling hash for saving time 
+            int i, j;
+            int n = TextString.Length;
+            int m = PatternString.Length;
 
+            if (n < m) {
+                // can't compare here
+                return;
+            }
+            // h is largest pow number like 10^99 if pattern has 100 elements
+            int h = 1;
+            int prime = 101;
+
+            // d is the amount of character in ASCII, can be declined to 26 (alphabet)
+            // or any number (range of bound that you gave to it) 
+            int d = 256;
+
+            int p_hash = 0;
+            int t_hash = 0;
+
+            // 10^99 ??? too large 
+            // 10^2 % 101 = (10%101 * 10%101 )% 101
+            // 10^3 $ 101 = (10^2 % 101) * (10%101) %101
+            // ... 
+            // 10^99 = (10^98 % 101) * (10%101)) % 101
+            // -> (a*b)%c = ((a%c) * (b%c)) %c
+
+            for (i = 0; i < m - 1; i++) {
+                h = (h * d) % prime;
+            }
+            // pow(p_hash, d), d = 10 
+            // i.g pattern = abc a-1 b-2 c-3
+            // 10*0 + 1 ) %101
+            // 10*1 + 2 ) %101
+            for (i = 0; i < m; i++) {
+                p_hash = (d * p_hash + PatternString[i]) % prime;
+                t_hash = (d * t_hash + TextString[i]) % prime;
+            }
+
+            ValuePattern = p_hash.ToString();
+            ValueText = t_hash.ToString();
+
+            for (i = 0; i < n - m + 1; i++) {
+
+                for (int k = 0; k < m; k++) {
+                    PatList[k].Foreground = Brushes.Blue;
+                    TxtList[k + i].Foreground = Brushes.Blue;
+                }
+                await Task.Delay(int.Parse(AnimationSpeed));
+
+
+                if (p_hash == t_hash) {
+
+                    await Task.Delay(int.Parse(AnimationSpeed));
+                    for (j = 0; j < m; j++) {
+                        PatList[j].Foreground = Brushes.Red;
+                        TxtList[i + j].Foreground = Brushes.Red;
+                        await Task.Delay(int.Parse(AnimationSpeed));
+                        // spurious hit occurs
+                        // when value are both same but the order is not true 
+                        // or mismatch like 'abd' and 'bbc' 
+                        if (PatternString[j] != TextString[i + j]) {
+                            //reset foreground pattern
+                            foreach (var item in PatList.Where(p => p.Foreground != Brushes.Black)) {
+                                item.Foreground = Brushes.Black;
+                            }
+                            //reset foreground text
+                            foreach (var item in TxtList.Where(p => p.Foreground != Brushes.Black)) {
+                                item.Foreground = Brushes.Black;
+                            }
+                            break;
+                        }
+                    }
+                    // exact match 
+                    if (j == m) {
+                        ResultText += $"Pattern occurs at shift = {i}\n";
+                        OnPropertyChanged(nameof(ResultText));
+                        await Task.Delay(int.Parse(AnimationSpeed) * 2);
+                        //reset foreground pattern
+                        foreach (var item in PatList.Where(p => p.Foreground != Brushes.Black)) {
+                            item.Foreground = Brushes.Black;
+                        }
+                        //reset foreground text
+                        foreach (var item in TxtList.Where(p => p.Foreground != Brushes.Black)) {
+                            item.Foreground = Brushes.Black;
+                        }
+                    }
+
+                }
+                else {
+
+                    if (i < n - m) {
+                        //rolling hash 
+                        t_hash = (d * (t_hash - TextString[i] * h) + (TextString[i + m])) % prime;
+                        if (t_hash < 0) {
+                            // guarantee if t_hash is negative, converting it to positive
+                            t_hash += prime;
+                        }
+                    }
+                    foreach (var item in PatList.Where(p => p.Foreground != Brushes.Black)) {
+                        item.Foreground = Brushes.Black;
+                    }
+                    //reset foreground text
+                    foreach (var item in TxtList.Where(p => p.Foreground != Brushes.Black)) {
+                        item.Foreground = Brushes.Black;
+                    }
+                }
+                ValueText = t_hash.ToString();
+
+            }
+        }
+        catch (Exception ex) {
+            MessageBox.Show("Có lỗi xảy ra vui lòng thử lại");
+        }
+        IsButtonEnabled = true;
     }
     public class TextItem : INotifyPropertyChanged
     {

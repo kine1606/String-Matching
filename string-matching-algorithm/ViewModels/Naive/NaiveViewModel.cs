@@ -69,6 +69,14 @@ public class NaiveViewModel : ViewModelBase {
 
     }
     private ObservableCollection<TextItem> _patList = new();
+    private bool _isButtonEnabled = true;
+    public bool IsButtonEnabled {
+        get { return _isButtonEnabled; }
+        set {
+            _isButtonEnabled = value;
+            OnPropertyChanged(nameof(IsButtonEnabled));
+        }
+    }
 
     #endregion
 
@@ -91,6 +99,7 @@ public class NaiveViewModel : ViewModelBase {
     public NaiveViewModel(NavigationStore navigationStore) {
         NavigateAlgorithmCommand = new NavigateCommand<AlgorithmViewModel>(navigationStore, () => new AlgorithmViewModel(navigationStore));
         NavigateCodeCommand = new NavigateCommand<CodeNaiveViewModel>(navigationStore, () => new CodeNaiveViewModel(navigationStore));
+        
         SearchCommand = new RelayCommand<object>(Render);
 
         ResultCommand = new RelayCommandAsync(async () => SearchAsync());
@@ -98,10 +107,10 @@ public class NaiveViewModel : ViewModelBase {
         SearchCommand = new RelayCommand<object>(Render);
 
         RandomTextCommand = new RelayCommand<object>((o) => { Txt = RandomString(); });
-        RandomPatternCommand = new RelayCommand<object>((o) => { Pattern = RandomString(3); });
+        RandomPatternCommand = new RelayCommand<object>((o) => { Pattern = RandomString(12); });
 
     }
-    public string RandomString(int length = 10) {
+    public string RandomString(int length = 36) {
         Random random = new Random();
         const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         return new string(Enumerable.Repeat(chars, length)
@@ -110,6 +119,7 @@ public class NaiveViewModel : ViewModelBase {
     public void Render(object? sender = null) {
         if (sender == null) {
             try {
+                ResultText = string.Empty;
                 TxtList.Clear();
                 PatList.Clear();
                 if (!(string.IsNullOrWhiteSpace(Txt) || string.IsNullOrWhiteSpace(Pattern))) {
@@ -130,6 +140,8 @@ public class NaiveViewModel : ViewModelBase {
 
     public async Task SearchAsync(object? parameter = null) {
         try {
+            IsButtonEnabled = false;
+            ResultText = string.Empty;
             int M = PatList.Count;
             int N = TxtList.Count;
 
@@ -164,7 +176,7 @@ public class NaiveViewModel : ViewModelBase {
         catch (Exception) {
             MessageBox.Show("Có lỗi xảy ra vui lòng thử lại");
         }
-        
+        IsButtonEnabled = true;
     }
     public class TextItem : INotifyPropertyChanged {
         private string _text;

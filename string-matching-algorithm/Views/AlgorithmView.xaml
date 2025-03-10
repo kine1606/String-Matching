@@ -23,7 +23,7 @@
             Height="auto"
             Margin="0,20"
             Command="{Binding NavigateNaiveCommand}"
-            Content="Naive"
+            Content="Brute Force"
             FontSize="40" />
         <Button
             Width="300"
@@ -36,7 +36,7 @@
             Height="auto"
             Margin="0,20,0,0"
             Command="{Binding NavigateRabinKarpCommand}"
-            Content="Rabin Karp"
+            Content="Rabin-Karp"
             FontSize="40" />
         <Button
             Width="300"

@@ -28,7 +28,7 @@
                 VerticalAlignment="Center"
                 FontSize="75"
                 FontWeight="Bold"
-                Text="Naive" />
+                Text="Brute Force" />
             <!--  text  -->
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>

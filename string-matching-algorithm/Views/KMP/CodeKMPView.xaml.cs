@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace string_matching_algorithm.Views.KMP
+namespace string_matching_algorithm.Views
 {
     /// <summary>
     /// Interaction logic for CodeKMPView.xaml
