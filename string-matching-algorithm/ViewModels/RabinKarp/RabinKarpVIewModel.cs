@@ -254,23 +254,20 @@ public class RabinKarpVIewModel : ViewModelBase
                     }
 
                 }
-                else {
-
-                    if (i < n - m) {
-                        //rolling hash 
-                        t_hash = (d * (t_hash - TextString[i] * h) + (TextString[i + m])) % prime;
-                        if (t_hash < 0) {
-                            // guarantee if t_hash is negative, converting it to positive
-                            t_hash += prime;
-                        }
+                if (i < n - m) {
+                    //rolling hash 
+                    t_hash = (d * (t_hash - TextString[i] * h) + (TextString[i + m])) % prime;
+                    if (t_hash < 0) {
+                        // guarantee if t_hash is negative, converting it to positive
+                        t_hash += prime;
                     }
-                    foreach (var item in PatList.Where(p => p.Foreground != Brushes.Black)) {
-                        item.Foreground = Brushes.Black;
-                    }
-                    //reset foreground text
-                    foreach (var item in TxtList.Where(p => p.Foreground != Brushes.Black)) {
-                        item.Foreground = Brushes.Black;
-                    }
+                }
+                foreach (var item in PatList.Where(p => p.Foreground != Brushes.Black)) {
+                    item.Foreground = Brushes.Black;
+                }
+                //reset foreground text
+                foreach (var item in TxtList.Where(p => p.Foreground != Brushes.Black)) {
+                    item.Foreground = Brushes.Black;
                 }
                 ValueText = t_hash.ToString();
 

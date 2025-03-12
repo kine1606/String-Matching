@@ -6,8 +6,6 @@
     xmlns:local="clr-namespace:string_matching_algorithm.Views"
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    d:DesignHeight="450"
-    d:DesignWidth="800"
     Background="#fffc"
     mc:Ignorable="d">
     <Grid>
@@ -15,23 +13,6 @@
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
-        <Image
-            Width="100"
-            Height="100"
-            HorizontalAlignment="Right"
-            Source="/Assets/brain.png" />
-        <Image
-            Width="100"
-            Height="100"
-            HorizontalAlignment="Left"
-            Source="/Assets/wireless.png" />
-        <Image
-            Grid.Row="1"
-            Width="100"
-            Height="100"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Bottom"
-            Source="/Assets/lightbulb.png" />
         <TextBlock
             Grid.Row="0"
             Padding="10"
