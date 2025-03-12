@@ -14,6 +14,7 @@
     <None Remove="Assets\c-sharp.png" />
     <None Remove="Assets\cpp_logo.png" />
     <None Remove="Assets\Csharp_Logo.png" />
+    <None Remove="Assets\depositphotos_218190530-stock-illustration-sun-vector-icon-isolated-transparent.jpg" />
     <None Remove="Assets\java-logo.png" />
     <None Remove="Assets\java.png" />
     <None Remove="Assets\lightbulb.png" />
@@ -32,6 +33,7 @@
     <Resource Include="Assets\c-sharp.png" />
     <Resource Include="Assets\cpp_logo.png" />
     <Resource Include="Assets\Csharp_Logo.png" />
+    <Resource Include="Assets\depositphotos_218190530-stock-illustration-sun-vector-icon-isolated-transparent.jpg" />
     <Resource Include="Assets\java-logo.png" />
     <Resource Include="Assets\java.png" />
     <Resource Include="Assets\lightbulb.png" />
