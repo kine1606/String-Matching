@@ -35,7 +35,7 @@
 <a name="thanhvien"></a>
 | STT | MSSV | Họ và Tên | Github | Email |
 | ------ |:-------------:| ----------------------:|---------------------------------------------------------------:|-------------------------:
-| 1 | 23520802 | Nguyễn Trung Kiên |[kien](https://github.com/kine1606) |23520802@gm.uit.edu.vn |
+| 1 | 23520802 | Nguyễn Trung Kiên |[kine](https://github.com/kine1606) |23520802@gm.uit.edu.vn |
 | 2 | 23520869 | Hồ Nguyễn Tài Lợi |[Superkid](https://github.com/loihnt) |23520869@gm.uit.edu.vn |
 
 ## MÔ TẢ
@@ -44,4 +44,4 @@
 -   It demonstrates how these algorithms work and optimizes string matching through interactive simulations.
 -   With a user-friendly interface and clear examples, our app makes complex algorithms accessible to beginners and practical for real-world applications.
 
-## ĐỒ ÁN MÔN HỌC: String-Matching(Chuỗi đối xứng)
+## ĐỒ ÁN MÔN HỌC: String-Matching(Đối sánh chuỗ)
