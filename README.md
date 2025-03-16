@@ -44,4 +44,4 @@
 -   It demonstrates how these algorithms work and optimizes string matching through interactive simulations.
 -   With a user-friendly interface and clear examples, our app makes complex algorithms accessible to beginners and practical for real-world applications.
 
-## ĐỒ ÁN MÔN HỌC: String-Matching(Đối sánh chuỗ)
+## ĐỒ ÁN MÔN HỌC: String-Matching(Đối sánh chuỗi)
