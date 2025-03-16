@@ -40,9 +40,9 @@
 
 ## MÔ TẢ
 
--   Our application provides an intuitive and visual explanation of three key string-searching algorithms: Knuth-Morris-Pratt (KMP), Boyer-Moore (BM), and Rabin-Karp (RK).
--   It demonstrates how these algorithms work and optimizes string matching through interactive simulations.
--   With a user-friendly interface and clear examples, our app makes complex algorithms accessible to beginners and practical for real-world applications.
+-   Ứng dụng của chúng tôi cung cấp một cách giải thích trực quan và dễ hiểu về ba thuật toán tìm kiếm chuỗi quan trọng: Knuth-Morris-Pratt (KMP), Boyer-Moore (BM) và Rabin-Karp (RK).
+-   Ứng dụng mô phỏng cách hoạt động của các thuật toán này và tối ưu hóa việc tìm kiếm chuỗi thông qua các tương tác trực quan.
+-   Với giao diện thân thiện và ví dụ minh họa rõ ràng, ứng dụng giúp người dùng, dù là người mới bắt đầu, dễ dàng tiếp cận các thuật toán phức tạp và ứng dụng chúng vào thực tiễn.
 
 ## ĐỒ ÁN MÔN HỌC: String-Matching(Đối sánh chuỗi
 Tải ứng dụng tại website: <a href="https://drive.google.com/drive/u/0/folders/1fY5v830vhxOetjW3tnCvogEHLWJhp1N9">String-Matching</a>
