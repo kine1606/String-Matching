@@ -8,6 +8,7 @@
     xmlns:viewmodels="clr-namespace:string_matching_algorithm.ViewModels"
     xmlns:views="clr-namespace:string_matching_algorithm.Views"
     Title="MainWindow"
+    Icon="Assets/brain2.png"
     ResizeMode="NoResize"
     WindowStartupLocation="CenterScreen"
     WindowState="Maximized"

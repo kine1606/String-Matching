@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <None Remove="Assets\brain.png" />
+    <None Remove="Assets\brain2.png" />
     <None Remove="Assets\c-sharp.png" />
     <None Remove="Assets\cpp_logo.png" />
     <None Remove="Assets\Csharp_Logo.png" />
@@ -30,10 +31,12 @@
 
   <ItemGroup>
     <Resource Include="Assets\brain.png" />
+    <Resource Include="Assets\brain2.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Assets\c-sharp.png" />
     <Resource Include="Assets\cpp_logo.png" />
     <Resource Include="Assets\Csharp_Logo.png" />
-    <Resource Include="Assets\depositphotos_218190530-stock-illustration-sun-vector-icon-isolated-transparent.jpg" />
     <Resource Include="Assets\java-logo.png" />
     <Resource Include="Assets\java.png" />
     <Resource Include="Assets\lightbulb.png" />
