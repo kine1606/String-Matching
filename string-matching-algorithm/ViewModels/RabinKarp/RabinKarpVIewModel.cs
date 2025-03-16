@@ -3,9 +3,11 @@ using string_matching_algorithm.Commands;
 using string_matching_algorithm.Stores;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace string_matching_algorithm.ViewModels;
 public class RabinKarpVIewModel : ViewModelBase
@@ -68,6 +70,17 @@ public class RabinKarpVIewModel : ViewModelBase
         }
     }
 
+    private string _timeComplexity;
+    public string TimeComplexity
+    {
+        get { return _timeComplexity; }
+        set
+        {
+            _timeComplexity = value;
+            OnPropertyChanged();
+        }
+    }
+
     private ObservableCollection<TextItem> _txtList = new();
     public ObservableCollection<TextItem> TxtList
     {
@@ -102,9 +115,11 @@ public class RabinKarpVIewModel : ViewModelBase
     private string _resultText;
 
     private bool _isButtonEnabled = true;
-    public bool IsButtonEnabled {
+    public bool IsButtonEnabled
+    {
         get { return _isButtonEnabled; }
-        set {
+        set
+        {
             _isButtonEnabled = value;
             OnPropertyChanged(nameof(IsButtonEnabled));
         }
@@ -137,28 +152,35 @@ public class RabinKarpVIewModel : ViewModelBase
     }
     public void Render(object? parameter = null)
     {
-        try {
-            if (parameter == null) {
+        try
+        {
+            if (parameter == null)
+            {
                 ResultText = string.Empty;
                 TxtList.Clear();
                 PatList.Clear();
-                if (!(string.IsNullOrWhiteSpace(TextString) || string.IsNullOrWhiteSpace(PatternString))) {
-                    foreach (var item in TextString) {
+                if (!(string.IsNullOrWhiteSpace(TextString) || string.IsNullOrWhiteSpace(PatternString)))
+                {
+                    foreach (var item in TextString)
+                    {
                         TxtList.Add(new TextItem { Text = item.ToString(), Foreground = Brushes.Black });
                     }
-                    foreach (var item in PatternString) {
+                    foreach (var item in PatternString)
+                    {
                         PatList.Add(new TextItem { Text = item.ToString(), Foreground = Brushes.Black });
                     }
                 }
             }
         }
-        catch (Exception ex) {
+        catch (Exception ex)
+        {
             MessageBox.Show("Có lỗi xảy ra vui lòng thử lại");
         }
     }
     public async Task rabinKarp(object? parameter = null)
     {
-        try {
+        try
+        {
             IsButtonEnabled = false;
             ResultText = string.Empty;
             // breaking pattern into every single char
@@ -170,7 +192,8 @@ public class RabinKarpVIewModel : ViewModelBase
             int n = TextString.Length;
             int m = PatternString.Length;
 
-            if (n < m) {
+            if (n < m)
+            {
                 // can't compare here
                 return;
             }
@@ -192,14 +215,16 @@ public class RabinKarpVIewModel : ViewModelBase
             // 10^99 = (10^98 % 101) * (10%101)) % 101
             // -> (a*b)%c = ((a%c) * (b%c)) %c
 
-            for (i = 0; i < m - 1; i++) {
+            for (i = 0; i < m - 1; i++)
+            {
                 h = (h * d) % prime;
             }
             // pow(p_hash, d), d = 10 
             // i.g pattern = abc a-1 b-2 c-3
             // 10*0 + 1 ) %101
             // 10*1 + 2 ) %101
-            for (i = 0; i < m; i++) {
+            for (i = 0; i < m; i++)
+            {
                 p_hash = (d * p_hash + PatternString[i]) % prime;
                 t_hash = (d * t_hash + TextString[i]) % prime;
             }
@@ -207,76 +232,170 @@ public class RabinKarpVIewModel : ViewModelBase
             ValuePattern = p_hash.ToString();
             ValueText = t_hash.ToString();
 
-            for (i = 0; i < n - m + 1; i++) {
+            for (i = 0; i < n - m + 1; i++)
+            {
 
-                for (int k = 0; k < m; k++) {
+                for (int k = 0; k < m; k++)
+                {
                     PatList[k].Foreground = Brushes.Blue;
                     TxtList[k + i].Foreground = Brushes.Blue;
                 }
                 await Task.Delay(int.Parse(AnimationSpeed));
 
 
-                if (p_hash == t_hash) {
+                if (p_hash == t_hash)
+                {
 
                     await Task.Delay(int.Parse(AnimationSpeed));
-                    for (j = 0; j < m; j++) {
+                    for (j = 0; j < m; j++)
+                    {
                         PatList[j].Foreground = Brushes.Red;
                         TxtList[i + j].Foreground = Brushes.Red;
                         await Task.Delay(int.Parse(AnimationSpeed));
                         // spurious hit occurs
                         // when value are both same but the order is not true 
                         // or mismatch like 'abd' and 'bbc' 
-                        if (PatternString[j] != TextString[i + j]) {
+                        if (PatternString[j] != TextString[i + j])
+                        {
                             //reset foreground pattern
-                            foreach (var item in PatList.Where(p => p.Foreground != Brushes.Black)) {
+                            foreach (var item in PatList.Where(p => p.Foreground != Brushes.Black))
+                            {
                                 item.Foreground = Brushes.Black;
                             }
                             //reset foreground text
-                            foreach (var item in TxtList.Where(p => p.Foreground != Brushes.Black)) {
+                            foreach (var item in TxtList.Where(p => p.Foreground != Brushes.Black))
+                            {
                                 item.Foreground = Brushes.Black;
                             }
                             break;
                         }
                     }
                     // exact match 
-                    if (j == m) {
+                    if (j == m)
+                    {
                         ResultText += $"Pattern occurs at shift = {i}\n";
                         OnPropertyChanged(nameof(ResultText));
                         await Task.Delay(int.Parse(AnimationSpeed) * 2);
                         //reset foreground pattern
-                        foreach (var item in PatList.Where(p => p.Foreground != Brushes.Black)) {
+                        foreach (var item in PatList.Where(p => p.Foreground != Brushes.Black))
+                        {
                             item.Foreground = Brushes.Black;
                         }
                         //reset foreground text
-                        foreach (var item in TxtList.Where(p => p.Foreground != Brushes.Black)) {
+                        foreach (var item in TxtList.Where(p => p.Foreground != Brushes.Black))
+                        {
                             item.Foreground = Brushes.Black;
                         }
                     }
 
                 }
-                if (i < n - m) {
+                if (i < n - m)
+                {
                     //rolling hash 
                     t_hash = (d * (t_hash - TextString[i] * h) + (TextString[i + m])) % prime;
-                    if (t_hash < 0) {
+                    if (t_hash < 0)
+                    {
                         // guarantee if t_hash is negative, converting it to positive
                         t_hash += prime;
                     }
                 }
-                foreach (var item in PatList.Where(p => p.Foreground != Brushes.Black)) {
+                foreach (var item in PatList.Where(p => p.Foreground != Brushes.Black))
+                {
                     item.Foreground = Brushes.Black;
                 }
                 //reset foreground text
-                foreach (var item in TxtList.Where(p => p.Foreground != Brushes.Black)) {
+                foreach (var item in TxtList.Where(p => p.Foreground != Brushes.Black))
+                {
                     item.Foreground = Brushes.Black;
                 }
                 ValueText = t_hash.ToString();
+            }
+
+
+            //measure timecomplexity
+            //GC.Collect();
+            GC.WaitForPendingFinalizers();
+            GC.Collect();
+            // measure time complexity
+            for (i = 0; i < 10; i++)
+            {
+                rabinKarp_timeComplexity();
 
             }
+            double totaltime = 0;
+            for (i = 0; i < 100; i++)
+            {
+                Stopwatch sw = Stopwatch.StartNew();
+                rabinKarp_timeComplexity();
+                sw.Stop();
+                totaltime += sw.Elapsed.TotalMilliseconds;
+            }
+            totaltime /= 100;
+            totaltime = Math.Truncate(totaltime * 10000000) / 10000000;
+            TimeComplexity = totaltime.ToString() + "s";
         }
-        catch (Exception ex) {
+        catch (Exception ex)
+        {
             MessageBox.Show("Có lỗi xảy ra vui lòng thử lại");
         }
         IsButtonEnabled = true;
+    }
+
+    public void rabinKarp_timeComplexity()
+    {
+        try
+        {
+
+            int i, j;
+            int n = TextString.Length;
+            int m = PatternString.Length;
+            if (n < m)
+            {
+                return;
+            }
+            int h = 1;
+            int prime = 101;
+            int d = 256;
+            int p_hash = 0;
+            int t_hash = 0;
+            for (i = 0; i < m - 1; i++)
+            {
+                h = (h * d) % prime;
+            }
+            for (i = 0; i < m; i++)
+            {
+                p_hash = (d * p_hash + PatternString[i]) % prime;
+                t_hash = (d * t_hash + TextString[i]) % prime;
+            }
+            for (i = 0; i < n - m + 1; i++)
+            {
+
+
+                if (p_hash == t_hash)
+                {
+                    for (j = 0; j < m; j++)
+                    {
+                        if (PatternString[j] != TextString[i + j])
+                        {
+                            break;
+                        }
+                    }
+                    // match
+                }
+                if (i < n - m)
+                {
+                    t_hash = (d * (t_hash - TextString[i] * h) + (TextString[i + m])) % prime;
+                    if (t_hash < 0)
+                    {
+                        t_hash += prime;
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Có lỗi xảy ra vui lòng thử lại");
+        }
     }
     public class TextItem : INotifyPropertyChanged
     {

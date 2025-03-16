@@ -3,12 +3,15 @@ using string_matching_algorithm.Commands;
 using string_matching_algorithm.Stores;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics;
+using System.DirectoryServices;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
 
 namespace string_matching_algorithm.ViewModels;
-public class KMPViewModel : ViewModelBase {
+public class KMPViewModel : ViewModelBase
+{
     #region Properties
     //param goc luu tru du lieu
 
@@ -38,7 +41,7 @@ public class KMPViewModel : ViewModelBase {
             OnPropertyChanged();
         }
     }
-    private string _textString ;
+    private string _textString;
     public string TextString
     {
         get => _textString;
@@ -72,20 +75,21 @@ public class KMPViewModel : ViewModelBase {
     }
 
     private ObservableCollection<TextItem> _txtList = new();
-    public ObservableCollection<TextItem> TxtList { 
+    public ObservableCollection<TextItem> TxtList
+    {
         get => _txtList;
         set
         {
             _txtList = value;
             OnPropertyChanged(nameof(TextString));
         }
-        }
+    }
 
     private ObservableCollection<TextItem> _patList = new();
     public ObservableCollection<TextItem> PatList
     {
         get { return _patList; }
-        set {_patList = value; OnPropertyChanged(nameof(PatternString)); }
+        set { _patList = value; OnPropertyChanged(nameof(PatternString)); }
     }
 
 
@@ -104,11 +108,24 @@ public class KMPViewModel : ViewModelBase {
     private string _resultText;
 
     private bool _isButtonEnabled = true;
-    public bool IsButtonEnabled {
+    public bool IsButtonEnabled
+    {
         get { return _isButtonEnabled; }
-        set {
+        set
+        {
             _isButtonEnabled = value;
             OnPropertyChanged(nameof(IsButtonEnabled));
+        }
+    }
+
+    private string _timeComplexity;
+    public string TimeComplexity
+    {
+        get { return _timeComplexity; }
+        set
+        {
+            _timeComplexity = value;
+            OnPropertyChanged();
         }
     }
     #endregion
@@ -118,7 +135,8 @@ public class KMPViewModel : ViewModelBase {
     public ICommand ResultCommand { get; set; }
     public ICommand RandomTextCommand { get; set; }
     public ICommand RandomPatternCommand { get; set; }
-    public KMPViewModel(NavigationStore navigationStore) {
+    public KMPViewModel(NavigationStore navigationStore)
+    {
         NavigateAlgorithmCommand = new NavigateCommand<AlgorithmViewModel>(navigationStore, () => new AlgorithmViewModel(navigationStore));
         NavigateCodeCommand = new NavigateCommand<CodeKMPViewModel>(navigationStore, () => new CodeKMPViewModel(navigationStore));
 
@@ -138,9 +156,11 @@ public class KMPViewModel : ViewModelBase {
     }
     public void Render(object? parameter = null)
     {
-        try {
+        try
+        {
 
-            if (parameter == null) {
+            if (parameter == null)
+            {
                 ResultText = string.Empty;
                 LPSString = null;
                 List<int> lps = new List<int>(new int[PatternString.Length]);
@@ -150,59 +170,73 @@ public class KMPViewModel : ViewModelBase {
                 LPSList.Clear();
                 TxtList.Clear();
                 PatList.Clear();
-                if (!(string.IsNullOrWhiteSpace(TextString) || string.IsNullOrWhiteSpace(PatternString))) {
-                    foreach (var item in TextString) {
+                if (!(string.IsNullOrWhiteSpace(TextString) || string.IsNullOrWhiteSpace(PatternString)))
+                {
+                    foreach (var item in TextString)
+                    {
                         TxtList.Add(new TextItem { Text = item.ToString(), Foreground = Brushes.Black });
                     }
-                    foreach (var item in PatternString) {
+                    foreach (var item in PatternString)
+                    {
                         PatList.Add(new TextItem { Text = item.ToString(), Foreground = Brushes.Black });
                     }
-                    foreach (var item in lps) {
+                    foreach (var item in lps)
+                    {
                         LPSString += item.ToString();
                         LPSList.Add(new TextItem { Text = item.ToString(), Foreground = Brushes.Black });
                     }
                 }
             }
         }
-        catch (Exception ex) {
+        catch (Exception ex)
+        {
             MessageBox.Show("Có lỗi xảy ra vui lòng thử lại");
         }
     }
-    public async Task LPS(object? sender = null) {
+
+    public async Task LPS(object? sender = null)
+    {
 
     }
     public void longestPrefixSuffix(string pattern, ref List<int> lps)
     {
-        try {
+        try
+        {
             int length = 0;
             int i = 1;
             int m = pattern.Length;
             // algorithm that find matches between prefix and suffix
             // how many times they appear in pattern string
-            while (i < m) {
+            while (i < m)
+            {
 
-                if (pattern[i] == pattern[length]) {
+                if (pattern[i] == pattern[length])
+                {
                     length++;
                     lps[i] = length;
                     i++;
                 }
-                else {
+                else
+                {
                     if (length != 0) length = lps[length - 1];
-                    else {
+                    else
+                    {
                         lps[i] = 0;
                         i++;
                     }
                 }
             }
         }
-        catch (Exception ex) {
+        catch (Exception ex)
+        {
             MessageBox.Show("Có lỗi xảy ra vui lòng thử lại");
         }
-        
+
     }
-     public async Task KMP(object? parameter = null)
-     {
-        try {
+    public async Task KMP(object? parameter = null)
+    {
+        try
+        {
             IsButtonEnabled = false;
             ResultText = string.Empty;
             List<int> res = new List<int>();
@@ -213,56 +247,127 @@ public class KMPViewModel : ViewModelBase {
 
             List<int> lps = new List<int>(new int[patternLength]);
             longestPrefixSuffix(PatternString, ref lps);
-            while (i < textLength) {
+            while (i < textLength)
+            {
                 TxtList[i].Foreground = Brushes.Red;
                 PatList[j].Foreground = Brushes.Red;
                 await Task.Delay(int.Parse(AnimationSpeed));
-                if (PatList[j].Text == TxtList[i].Text) {
+                if (PatList[j].Text == TxtList[i].Text)
+                {
                     i++;
                     j++;
                     // found 
-                    if (j == patternLength) {
+                    if (j == patternLength)
+                    {
                         //res.Add(i - j);
                         ResultText += $"Pattern occurs at shift = {i - j}\n";
                         OnPropertyChanged(nameof(ResultText));
                         await Task.Delay(int.Parse(AnimationSpeed) * 2);
                         j = lps[j - 1];
                         //reset foreground pattern
-                        foreach (var item in PatList.Where(p => p.Foreground != Brushes.Black)) {
+                        foreach (var item in PatList.Where(p => p.Foreground != Brushes.Black))
+                        {
                             item.Foreground = Brushes.Black;
                         }
                         //reset foreground text
-                        foreach (var item in TxtList.Where(p => p.Foreground != Brushes.Black)) {
+                        foreach (var item in TxtList.Where(p => p.Foreground != Brushes.Black))
+                        {
                             item.Foreground = Brushes.Black;
                         }
                     }
                 }
-                else {
+                else
+                {
                     // if j is not initial value (0), move j to value in lps table
                     if (j != 0) j = lps[j - 1];
                     else i++;
                     //reset foreground pattern
-                    foreach (var item in PatList.Where(p => p.Foreground != Brushes.Black)) {
+                    foreach (var item in PatList.Where(p => p.Foreground != Brushes.Black))
+                    {
                         item.Foreground = Brushes.Black;
                     }
                     //reset foreground text
-                    foreach (var item in TxtList.Where(p => p.Foreground != Brushes.Black)) {
+                    foreach (var item in TxtList.Where(p => p.Foreground != Brushes.Black))
+                    {
                         item.Foreground = Brushes.Black;
                     }
                     await Task.Delay(int.Parse(AnimationSpeed));
                 }
             }
+
+
+            //measure timecomplexity
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+            GC.Collect();
+            // measure time complexity
+            for (i = 0; i < 10; i++)
+            {
+                KMP_TimeComplexity();
+            }
+            double totaltime = 0;
+            for (i = 0; i < 100; i++)
+            {
+                Stopwatch sw = Stopwatch.StartNew();
+                KMP_TimeComplexity();
+                sw.Stop();
+                totaltime += sw.Elapsed.TotalMilliseconds;
+            }
+            totaltime /= 100;
+            totaltime = Math.Truncate(totaltime * 10000000) / 10000000;
+            TimeComplexity = totaltime.ToString() + "s";
         }
-        catch (Exception ex) {
+        catch (Exception ex)
+        {
             MessageBox.Show("Có lỗi xảy ra vui lòng thử lại");
         }
-            IsButtonEnabled = true;
+        IsButtonEnabled = true;
 
+    }
+
+    public void KMP_TimeComplexity()
+    {
+        try
+        {
+            int i = 0;
+            int j = 0;
+            int m = PatternString.Length;
+            int n = TextString.Length;
+            List<int> lps = new List<int>(new int[m]);
+            longestPrefixSuffix(PatternString, ref lps);
+
+            while (i < m)
+            {
+                if (PatternString[j] == TextString[i])
+                {
+                    i++;
+                    j++;
+                    if (j == m)
+                    {
+                        j = lps[j - 1];
+                    }
+                }
+                else
+                {
+                    if (j != 0)
+                    {
+
+                        j = lps[j - 1];
+                    }
+                    else i++;
+                }
+            }
+
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Có lỗi xảy ra vui lòng thử lại");
+        }
     }
 
     public class TextItem : INotifyPropertyChanged
     {
-        private string _text; 
+        private string _text;
         private Brush _foreground = Brushes.Black;
 
         public string Text
