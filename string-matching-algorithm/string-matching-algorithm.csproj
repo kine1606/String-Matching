@@ -7,6 +7,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\brain2.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,6 +23,10 @@
     <None Remove="Assets\python-logo.png" />
     <None Remove="Assets\python.png" />
     <None Remove="Assets\wireless.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\brain2.ico" />
   </ItemGroup>
 
   <ItemGroup>
