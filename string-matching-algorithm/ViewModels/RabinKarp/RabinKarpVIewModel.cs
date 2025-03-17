@@ -313,7 +313,7 @@ public class RabinKarpVIewModel : ViewModelBase
 
 
             //measure timecomplexity
-            //GC.Collect();
+            GC.Collect();
             GC.WaitForPendingFinalizers();
             GC.Collect();
             // measure time complexity
@@ -332,7 +332,7 @@ public class RabinKarpVIewModel : ViewModelBase
             }
             totaltime /= 100;
             totaltime = Math.Truncate(totaltime * 10000000) / 10000000;
-            TimeComplexity = totaltime.ToString() + "s";
+            ResultText += "Time Complexity: " + totaltime.ToString() + "s";
         }
         catch (Exception ex)
         {
@@ -391,6 +391,7 @@ public class RabinKarpVIewModel : ViewModelBase
                     }
                 }
             }
+
         }
         catch (Exception ex)
         {

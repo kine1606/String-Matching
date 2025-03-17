@@ -236,7 +236,8 @@ public class NaiveViewModel : ViewModelBase
             }
             totalTime /= 100;
             totalTime = Math.Truncate(totalTime * 10000000) / 10000000;
-            TimeComplexity = totalTime.ToString() + "s";
+            ResultText += "Time Complexity: " + totalTime.ToString() + "s";
+
 
 
         }

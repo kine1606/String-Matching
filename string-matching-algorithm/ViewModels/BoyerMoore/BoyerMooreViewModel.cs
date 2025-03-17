@@ -248,7 +248,7 @@ public class BoyerMooreViewModel : ViewModelBase
             }
             totaltime /= 100;
             totaltime = Math.Truncate(totaltime * 10000000) / 10000000;
-            TimeComplexity = totaltime.ToString() + "s";
+            ResultText += "Time Complexity: " + totaltime.ToString() + "s";
         }
         catch (Exception)
         {

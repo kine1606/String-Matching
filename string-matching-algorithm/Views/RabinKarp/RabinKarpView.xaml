@@ -22,23 +22,14 @@
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0">
-                <TextBlock Grid.Row="0"
-                           Padding="20"
-                           HorizontalAlignment="Left"
-                           VerticalAlignment="Center"
-                           FontSize="75"
-                           FontWeight="Bold"
-                           Text="Rabin-Karp" />
-                <TextBlock Text="Time complexity:"
-                           FontSize="30"
-                           VerticalAlignment="Center"
-                           HorizontalAlignment="Right"
-                           Margin="0 0 200 7" />
-                <TextBlock Text="{Binding TimeComplexity}"
-                           FontSize="30"
-                           VerticalAlignment="Center"
-                           HorizontalAlignment="Right"
-                           FontWeight="Bold"/>
+                <TextBlock
+                    Grid.Row="0"
+                    Padding="20"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="75"
+                    FontWeight="Bold"
+                    Text="Rabin-Karp" />
             </Grid>
             <!--  text  -->
             <Grid Grid.Row="1">
